@@ -1,0 +1,41 @@
+@import './reset';
+@import './breakpoints-mixin';
+
+.container {
+  margin-inline: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1320px;
+}
+
+@include breakpoint(xxl) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@include breakpoint(xl) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@include breakpoint(lg) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@include breakpoint(md) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@include breakpoint(sm) {
+  .container {
+    max-width: 540px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

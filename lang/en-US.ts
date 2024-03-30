@@ -1,3 +1,7 @@
 export default {
-    hi: 'Hello'
+    home : 'Home',
+    blog:'Blog',
+    portfolio:'Portfolio',
+    dark:'Dark',
+    light:'Light',
 }

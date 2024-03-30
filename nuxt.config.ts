@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   // Devtools
   devtools: { enabled: true },
-  modules: ['@nuxt/content', "@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxtjs/i18n"],
+  modules: ['@nuxt/content', "@nuxtjs/google-fonts", "@nuxtjs/i18n","nuxt-icon"],
 
   // Nuxt Content options
   content: {
@@ -12,10 +12,7 @@ export default defineNuxtConfig({
       'Roboto Mono': [400, 500, 600, 700]
     }
   },
-  // Global CSS
-  css: [
-    '~/assets/css/main.css',
-  ],
+
 
   i18n: {
     vueI18n: './i18n.config.ts',

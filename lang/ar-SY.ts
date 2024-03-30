@@ -1,3 +1,7 @@
 export default{
-    hi : 'مرحبا'
+    home: 'الرئيسية',
+    blog: 'المدونة',
+    portfolio: 'معرض الأعمال',
+
+
 }
