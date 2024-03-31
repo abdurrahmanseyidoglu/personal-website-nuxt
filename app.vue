@@ -1,7 +1,9 @@
 <template>
-  <div class="container">
-    <Navbar/>
-    <NuxtPage/>
+  <div class=" bg-white dark:bg-gray-900 min-h-screen">
+    <div class="container">
+      <Navbar/>
+      <NuxtPage/>
+    </div>
   </div>
 </template>
 

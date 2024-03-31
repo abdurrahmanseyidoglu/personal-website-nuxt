@@ -16,53 +16,18 @@ body {
   word-break: break-word;
   box-sizing: border-box;
 }
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-body {
-  position: relative;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-button {
-  outline: none;
-  border: none;
-  background: none;
-}
-
-img {
+img{
   max-width: 100%;
-  height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-:root {
-  transition: all ease-in-out .3s;
-  background-color: #fefefe;
-  color: #273346;
-
-  &.dark {
-    color: #fefefe;
-    background-color: #262626;
-  }
-}
+//
+//:root {
+//  transition: all ease-in-out .3s;
+//  background-color: #fefefe;
+//  color: #273346;
+//
+//  &.dark {
+//    color: #fefefe;
+//    background-color: #262626;
+//  }
+//}

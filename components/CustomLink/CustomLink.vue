@@ -11,5 +11,5 @@ const props = defineProps({
   href: String,
   title: String
 })
-console.log('current name', route.fullPath)
+const route = useRoute()
 </script>
