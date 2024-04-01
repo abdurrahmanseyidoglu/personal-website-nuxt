@@ -28,7 +28,7 @@ const props = defineProps({
     background-color: #339af0;
     bottom: -3px;
     z-index: 1;
-    transition: all ease-in-out .1s;
+    transition: all ease-in-out .2s;
     inset-inline-start: 0;
 
   }

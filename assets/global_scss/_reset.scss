@@ -12,7 +12,7 @@ html {
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
   word-break: break-word;
   box-sizing: border-box;
 }
@@ -20,14 +20,13 @@ img{
   max-width: 100%;
 }
 
-//
-//:root {
-//  transition: all ease-in-out .3s;
-//  background-color: #fefefe;
-//  color: #273346;
-//
-//  &.dark {
-//    color: #fefefe;
-//    background-color: #262626;
-//  }
-//}
+
+:root {
+ transition: all ease-in-out .3s;
+ background-color: #fff;
+
+ &.dark {
+
+   background-color: #27272a;
+ }
+}

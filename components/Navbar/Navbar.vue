@@ -1,6 +1,6 @@
 <template>
   <div class="navbar">
-    <div class="navbar-links-wrapper text-neutral-800 dark:text-slate-200">
+    <div class="navbar-links-wrapper">
       <CustomLink :href="`/`" :title="$t('home')" class="underline"/>
       <CustomLink :href="`/blog`" :title="$t('blog')"/>
       <CustomLink :href="`/portfolio`" :title="$t('portfolio')"/>

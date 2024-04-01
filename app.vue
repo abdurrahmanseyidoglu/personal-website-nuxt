@@ -1,6 +1,6 @@
 <template>
-  <div class=" bg-white dark:bg-gray-900 min-h-screen">
-    <div class="container">
+  <div class=" bg-white dark:bg-zinc-800 min-h-screen  text-neutral-800 dark:text-slate-200">
+    <div class="max-w-4xl mx-auto px-4">
       <Navbar/>
       <NuxtPage/>
     </div>
