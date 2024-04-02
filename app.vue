@@ -11,7 +11,6 @@
 @import './assets/global_scss/global-styles';
 
 </style>
-<script setup>
+<script setup lang="ts">
 const isDark = ref(false)
-
 </script>
