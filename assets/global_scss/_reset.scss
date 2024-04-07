@@ -17,6 +17,9 @@ body {
   word-break: break-word;
   box-sizing: border-box;
 }
+body {
+  height: auto;
+}
 
 img {
   max-width: 100%;
@@ -29,7 +32,7 @@ img {
 
   &.dark {
 
-    background-color: #27272a;
+    background-color: $dark;
   }
 }
 

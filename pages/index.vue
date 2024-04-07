@@ -1,22 +1,24 @@
 <template>
     <div class="home">
         <div class="about-me">
-            <img class="my-icon" src="/images/my-icon.png" alt="personal picture of the website owner pixilated" width="102" height="102">
-            <p class="name ">Hi, I'm Abdurrahman</p>
+            <img class="my-icon" src="/images/my-icon.png" alt="personal picture of the website owner pixilated"
+                width="102" height="102">
+            <p class="name ">{{ $t('hi') }}</p>
             <p class="description">
-                A computer engineer and a front-end developer.
+                {{ $t('summery') }}
             </p>
             <hr class="separator">
             <!-- PROFESSIONAL EXPERIENCE -->
             <div class="employment-history">
-                <p class="employment-title">PROFESSIONAL EXPERIENCE</p>
+                <p class="employment-title">{{ $t('experience') }}</p>
                 <div class="employment-cards-wrapper">
-                    <EmploymentCard :date="`November 2021 - present`" :jobTile="`Front-end developer`"
-                        :companyName="`Imtilak Group`" :companyLocation="`Istanbul / Turkey`"
+                    <EmploymentCard :date="`${$t('november')} 2021 - ${$t('present')}`" :jobTile="$t('frontEnd')"
+                        :companyName="$t('imtilakGroup')" :companyLocation="`${$t('istanbul')} / ${$t('turkey')}`"
                         :jobPoints="ImtilakJobPoints" />
                     <hr class="dashed-separator">
-                    <EmploymentCard :date="`August 2020 - October-2021`" :jobTile="`Front-end developer`"
-                        :companyName="`Ince Group`" :companyLocation="`Istanbul / Turkey`" :jobPoints="InceJobPoints" />
+                    <EmploymentCard :date="`${$t('august')} 2020 - ${$t('october')} -2021`" :jobTile="$t('frontEnd')"
+                        :companyName="$t('inceGroup')" :companyLocation="`${$t('istanbul')} / ${$t('turkey')}`"
+                        :jobPoints="InceJobPoints" />
                 </div>
             </div>
 
@@ -24,12 +26,12 @@
             <!-- Skills Section -->
             <div class="my-skills">
                 <p class="title">
-                   SKILLS
+                    {{ $t('skills') }}
 
                 </p>
                 <ul class="skills">
                     <li>
-                        <p class="sub-skill-title">Programming Languages</p>
+                        <p class="sub-skill-title">{{ $t('programmingLanguages') }}</p>
                         <ul class="sub-skills">
                             <li class="sub-skill" v-for="programmingLanguage in programmingLanguages"
                                 :key="programmingLanguage">
@@ -38,7 +40,7 @@
                         </ul>
                     </li>
                     <li>
-                        <p class="sub-skill-title">Frameworks</p>
+                        <p class="sub-skill-title">{{ $t('frameworks') }}</p>
                         <ul class="sub-skills">
 
                             <li class="sub-skill" v-for="framework in librariesAndFrameworks" :key="framework">
@@ -50,7 +52,7 @@
 
                     <li>
                         <ul class="sub-skills">
-                            <p class="sub-skill-title">Languages</p>
+                            <p class="sub-skill-title">{{ $t('languages') }}</p>
 
                             <li class="sub-skill" v-for="language in languages" :key="language.name">
                                 {{ language.name }} - ({{ language.proficiency }})

@@ -1,14 +1,14 @@
 <template>
   <div class="navbar">
     <div class="navbar-links-wrapper">
-      <CustomLink :href="`/`" :title="$t('home')" class="underline"/>
-      <CustomLink :href="`/blog`" :title="$t('blog')"/>
-      <CustomLink :href="`/portfolio`" :title="$t('portfolio')"/>
+      <CustomLink :href="`/`" :title="$t('home')" class="underline" />
+      <CustomLink :href="`/blog`" :title="$t('blog')" />
+      <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
     </div>
 
     <div @click="handleThemeToggle" class="theme-toggle">
-      <Icon v-if="!isDark" name="ic:round-nights-stay" size="1.5rem" class="text-neutral-800 dark:text-slate-200"/>
-      <Icon v-else name="material-symbols:light-mode-outline-rounded" size="1.5rem" color="white"/>
+      <Icon v-show="!isDark" name="ic:round-nights-stay" size="1.5rem" class="text-neutral-800 dark:text-slate-200" />
+      <Icon v-show="isDark" name="material-symbols:light-mode-outline-rounded" size="1.5rem" color="white" />
     </div>
   </div>
 </template>
