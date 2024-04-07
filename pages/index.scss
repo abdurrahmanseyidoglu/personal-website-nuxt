@@ -16,8 +16,6 @@
             margin-block: 1rem;
         }
 
-
-
         .my-skills {
 
             .skills,
@@ -29,6 +27,7 @@
                 margin-bottom: 1rem;
                 font-weight: 500;
                 font-size: 1.5rem;
+                margin-top: 2rem;
             }
 
             .sub-skill-title {
@@ -50,9 +49,18 @@
             font-size: 1.5rem;
             font-weight: 500;
             margin-bottom: 1rem;
+            margin-top: 2rem;
         }
 
-      
+        .employment-cards-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+
     }
 }
 
