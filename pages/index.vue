@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="about-me">
-            <img class="my-icon" src="/images/my-icon.png" alt="personal picture of the website owner pixilated">
+            <img class="my-icon" src="/images/my-icon.png" alt="personal picture of the website owner pixilated" width="102" height="102">
             <p class="name ">Hi, I'm Abdurrahman</p>
             <p class="description">
                 A computer engineer and a front-end developer.
@@ -24,12 +24,12 @@
             <!-- Skills Section -->
             <div class="my-skills">
                 <p class="title">
-                    My skills:
+                   SKILLS
 
                 </p>
                 <ul class="skills">
                     <li>
-                        <p class="sub-skill-title">Programmg Languages</p>
+                        <p class="sub-skill-title">Programming Languages</p>
                         <ul class="sub-skills">
                             <li class="sub-skill" v-for="programmingLanguage in programmingLanguages"
                                 :key="programmingLanguage">
@@ -131,7 +131,7 @@ const ImtilakJobPoints = [
 ]
 const InceJobPoints = [
     {
-        'point_title': 'Build and refactor user and admin dashboards utilizing React.js',
+        'point_title': 'Build and refactor user and admin dashboards utilizing React.js, TailwindCss, Typescript and Bootstrap',
         'point_links': []
     },
     {
@@ -143,7 +143,7 @@ const InceJobPoints = [
         'point_links': []
     },
     {
-        'point_title': ': Created comprehensive documentation including project specifications, technical documentation, and user manuals to facilitate smooth project handover and support future maintenance',
+        'point_title': 'Created comprehensive documentation including project specifications, technical documentation, and user manuals to facilitate smooth project handover and support future maintenance',
         'point_links': []
     },
 ]

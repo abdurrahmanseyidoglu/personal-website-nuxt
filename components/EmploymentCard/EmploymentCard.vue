@@ -8,12 +8,11 @@
         <p class="job-description">
             {{ props.jobDescription }}
         </p>
-        <ul>
+        <ul class="job-points">
             <li v-for="jobPoint in props.jobPoints" :key="jobPoint?.point_title">{{ jobPoint.point_title }}
                 <template v-if="jobPoint.point_links.length > 0">
                     <a v-for="pointLink in jobPoint.point_links" target="_blank" class="external-link"
-                        :key="pointLink.point_href" :title="pointLink.point_title" :href="pointLink.point_href">{{
-                            pointLink.point_title }}</a>
+                        :key="pointLink.point_href" :title="pointLink.point_title" :href="pointLink.point_href">{{ pointLink.point_title }}</a>
 
                 </template>
             </li>

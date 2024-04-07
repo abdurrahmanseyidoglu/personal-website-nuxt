@@ -7,9 +7,11 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 1rem;
-
+        padding: .5rem;
+        border-radius: 8px;
+        background-color: $blue-bg;
         .date {
-            font-size: 14px;
+            font-size:0.875rem;
 
         }
 
@@ -20,9 +22,16 @@
         }
 
         .company-location {
-            font-size: 14px;
+            font-size: 0.875rem;
 
         }
 
+    }
+    .job-points{
+        
+        li{
+            margin-bottom: .5rem;
+            list-style: inside square;
+        }
     }
 }
