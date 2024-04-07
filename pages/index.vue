@@ -6,34 +6,52 @@
             <p class="description">
                 A computer engineer and a front-end developer.
             </p>
-            <hr class="seperator">
+            <hr class="separator">
+            <!-- PROFESSIONAL EXPERIENCE -->
+            <div class="employment-history">
+                <p class="employment-title">PROFESSIONAL EXPERIENCE</p>
+                <EmploymentCard />
+            </div>
+
+            <hr class="separator">
+            <!-- Skills Section -->
             <div class="my-skills">
                 <p class="title">
-                    Here are my skills:
+                    My skills:
 
                 </p>
                 <ul class="skills">
-                    <ul class="sub-skills">
-                        <li class="sub-skill" v-for="programmingLanguage in programmingLanguages"
-                            :key="programmingLanguage">
-                            {{ programmingLanguage }}
-                        </li>
-                    </ul>
-                    <ul class="sub-skills">
+                    <li>
+                        <p class="sub-skill-title">Programming Languages</p>
+                        <ul class="sub-skills">
+                            <li class="sub-skill" v-for="programmingLanguage in programmingLanguages"
+                                :key="programmingLanguage">
+                                {{ programmingLanguage }}
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="sub-skill-title">Frameworks</p>
+                        <ul class="sub-skills">
 
-                        <li class="sub-skill" v-for="framework in librariesAndFrameworks" :key="framework">
-                            {{ framework }}
-                        </li>
+                            <li class="sub-skill" v-for="framework in librariesAndFrameworks" :key="framework">
+                                {{ framework }}
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </li>
 
-                    <ul class="sub-skills">
+                    <li>
+                        <ul class="sub-skills">
+                            <p class="sub-skill-title">Languages</p>
 
-                        <li class="sub-skill" v-for="langauge in languages" :key="langauge.name">
-                            {{ langauge.name }} - ({{ langauge.proficiency }})
-                        </li>
+                            <li class="sub-skill" v-for="language in languages" :key="language.name">
+                                {{ language.name }} - ({{ language.proficiency }})
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </li>
+
 
                 </ul>
             </div>

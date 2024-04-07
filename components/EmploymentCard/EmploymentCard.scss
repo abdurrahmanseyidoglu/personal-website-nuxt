@@ -1,0 +1,23 @@
+@import '../../assets/global_scss/variables';
+.employment-card {
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .date {
+            font-size: 14px;
+
+        }
+        .title{
+            font-size: 1.3rem;
+            font-weight: 500;
+            
+        }
+        .company-location{
+            font-style: 14px;
+
+        }
+
+    }
+}

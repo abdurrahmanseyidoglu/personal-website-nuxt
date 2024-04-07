@@ -12,6 +12,8 @@ const props = defineProps({
 })
 </script>
 <style lang="scss">
+@import '../../assets/global_scss/variables';
+
 .custom-link {
   text-decoration: none;
   position: relative;
@@ -25,7 +27,7 @@ const props = defineProps({
     width: 0;
     height: 2px;
     border-radius: 2px;
-    background-color: #339af0;
+    background-color: $blue;
     bottom: -3px;
     z-index: 1;
     transition: all ease-in-out .2s;

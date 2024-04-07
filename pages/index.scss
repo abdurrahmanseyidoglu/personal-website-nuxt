@@ -1,17 +1,77 @@
+@import '../assets/global_scss/variables';
 
-.home{
-    .about-me{
-        .my-icon{
+.home {
+    .about-me {
+        .my-icon {
             width: 102px;
         }
-        .name{
+
+        .name {
             font-size: 3rem;
             font-weight: 600;
-           margin-top: 1rem;
+            margin-top: 1rem;
         }
+
+        .description {
+            margin-block: 1rem;
+        }
+
+
+
+        .my-skills {
+
+            .skills,
+            .sub-skills {
+                list-style: inside;
+            }
+
+            .title {
+                margin-bottom: 1rem;
+                font-weight: 500;
+                font-size: 1.5rem;
+            }
+
+            .sub-skill-title {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-weight: 500;
+                font-size: 1.3rem;
+                color: $blue;
+            }
+
+
+        }
+
+
     }
-    .skills,.sub-skilld{
-        list-style: initial;
+
+    .employment-history {
+        .employment-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+      
     }
- 
+}
+
+
+
+.dark {
+    .home {
+        // .about-me {
+        //     .my-skills {
+        //         .sub-skill-title {
+        //             &::before {
+        //                 color: #e2e8f0;
+        //             }
+
+        //         }
+
+        //     }
+        // }
+    }
+
+
 }

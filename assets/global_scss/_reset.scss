@@ -1,3 +1,4 @@
+@import './variables';
 
 html {
   font-size: 16px;
@@ -16,17 +17,22 @@ body {
   word-break: break-word;
   box-sizing: border-box;
 }
-img{
+
+img {
   max-width: 100%;
 }
 
 
 :root {
- transition: all ease-in-out .3s;
- background-color: #fff;
+  transition: all ease-in-out .3s;
+  background-color: #fff;
 
- &.dark {
+  &.dark {
 
-   background-color: #27272a;
- }
+    background-color: #27272a;
+  }
+}
+
+.separator {
+  margin-bottom: 1rem;
 }
