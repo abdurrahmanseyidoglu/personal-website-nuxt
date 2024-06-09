@@ -22,11 +22,9 @@ const formatDate = (dateString: string): string => {
         return `${year}-${month}-${day}`;
     }
     else {
+
         return ''
     }
-
-
-
 }
 </script>
 
