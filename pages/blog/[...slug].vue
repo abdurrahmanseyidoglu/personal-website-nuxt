@@ -1,9 +1,9 @@
 <template>
   <ContentRenderer :value="data ?? {}" class="prose mx-auto dark:prose-invert" />
   <div class="tags-wrapper">
-    <template v-if="data?.tags?.length??[].length > 0">
-      <!-- <Tag v-for="tag in data?.tags" :key="tag" :title="tag"/> -->
-    </template>
+    <!-- <template v-if="data?.tags?.length ?? [].length > 0">
+      <Tag v-for="tag in data?.tags" :key="tag" :title="tag"/>
+    </template> -->
   </div>
 </template>
 
@@ -26,8 +26,6 @@ const contentData = data as Ref<ContentData | null>
 useHead({
   title: contentData.value?.title ? `${contentData.value.title} | Abdurrahman` : "Abdurrahman",
 })
-// TODO: description and ogDescription are not working properly
-
 useSeoMeta({
   ogTitle: contentData.value?.title ? `${contentData.value.title} | Abdurrahman` : "Abdurrahman",
   description: contentData.value?.description ? contentData.value.description : "Abdurrahman\'s Personal website",
