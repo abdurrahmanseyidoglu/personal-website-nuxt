@@ -69,13 +69,18 @@
     </div>
 </template>
 <script setup lang="ts">
-const programmingLanguages = ref(['HTML', 'CSS', 'JavaScript', 'TypeScript', 'C#']);
+
+const programmingLanguages = ref(['HTML', 'CSS', 'JavaScript', 'TypeScript']);
 const librariesAndFrameworks = ref(['Vue', 'Nuxt', 'Pinia', 'Vuex', 'React', 'Inertia.js', 'Blade template engine', 'Tailwind CSS', 'SCSS', 'Bootstrap']);
 const languages = ref([
     { name: 'Arabic', proficiency: 'Native' },
     { name: 'English', proficiency: 'Intermediate' },
     { name: 'Turkish', proficiency: 'Intermediate' }
 ])
+const i18n = useI18n();
+useHead({
+    title: `${i18n.t('home')} | Abdurrahman`,
+})
 
 // Employment Data
 const ImtilakJobPoints = [
