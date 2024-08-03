@@ -55,7 +55,6 @@ export default defineNuxtConfig({
         defaultLocale: 'en',
         lazy: true,
         langDir: 'lang',
-        baseUrl: 'https://my-nuxt-app.com'
 
     }
 })

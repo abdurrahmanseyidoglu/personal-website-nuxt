@@ -1,5 +1,6 @@
 
 # TODO
+- [x] Fix dark mode
 
 ## Urgent
 
@@ -10,9 +11,11 @@
 - [ ] Save the state of the theme user selects (maybe in localstorage??)
 - [x] Style The list of content in the Blog home page
 - [x] Find a way to add og images and SEO tags in general sing ```Front-matter```
+- [ ] Add footer section that has Linkedin and Github accounts
+- [ ] Add multilingual feature 
 
 
 ### Later
 
 - [ ] Add ```Tags``` Page
-- [ ] Add multilingual feature
+ 

@@ -20,8 +20,9 @@
 </style>
 <script lang="ts" setup>
 
-const isDark = ref(false)
+const isDark = ref(true)
 onMounted(() => {
+  
 
 })
 const handleThemeToggle = () => {

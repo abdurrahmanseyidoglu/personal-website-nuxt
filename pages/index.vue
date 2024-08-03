@@ -70,8 +70,8 @@
 </template>
 <script setup lang="ts">
 const i18n = useI18n()
-const programmingLanguages = ref(['HTML', 'CSS', 'JavaScript', 'TypeScript']);
-const librariesAndFrameworks = ref(['Vue', 'Nuxt', 'Pinia', 'Vuex', 'React', 'Inertia.js', 'Blade template engine', 'Tailwind CSS', 'SCSS', 'Bootstrap']);
+const programmingLanguages = ref(['HTML', 'CSS|SCSS', 'JavaScript', 'TypeScript', 'PHP', 'SQL']);
+const librariesAndFrameworks = ref(['Vue', 'Nuxt', 'Pinia', 'Vuex', 'React', 'Inertia.js', 'Laravel', 'Blade template engine', 'Tailwind CSS', 'Bootstrap']);
 const languages = ref([
     { name: `${i18n.t('arabic')}`, proficiency: `${i18n.t('native')}` },
     { name: `${i18n.t('english')}`, proficiency: `${i18n.t('advanced')}` },

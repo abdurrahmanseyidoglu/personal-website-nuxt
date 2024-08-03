@@ -16,7 +16,8 @@ watchEffect(() => {
   useHead({
     htmlAttrs: {
       lang: locale.value,
-      dir: locale.value === 'ar' ? 'rtl' : 'ltr'
+      dir: locale.value === 'ar' ? 'rtl' : 'ltr',
+      class: 'dark'
     },
   });
 });

@@ -19,7 +19,7 @@ export default {
     imtilakPoint1: 'Developed and managed Server-side-render web applications using Nuxt.js.',
     imtilakPoint2: 'Successfully constructed the Imtilak-Global website from the ground up.',
     imtilakPoint3: 'Proficiently crafted dynamic single-page applications using Vue.js with Server-side-rendering using Inertia.js library.',
-    imtilakPoint4: 'Designed captivating landing pages employing Blade, SCSS, and JavaScript | Examples:',
+    imtilakPoint4: 'Designed captivating landing pages, Examples:',
     imtilakPoint5: 'Exemplified expertise in webpage optimization, resulting in a substantial performance boost for a website.',
     imtilakPoint6: 'Led the development of the Oragon Website project.',
     inceGroup: 'Ince Group',
