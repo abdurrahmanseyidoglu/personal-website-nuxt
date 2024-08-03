@@ -36,4 +36,5 @@ export default {
     turkish: 'Turkish',
     native: 'Native',
     advanced: 'advanced',
+    copyRight:`All Rights Reserved Abdurrahman Seyidoğlu ©`
 }

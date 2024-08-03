@@ -36,4 +36,5 @@ export default {
     turkish: 'التركية',
     native: 'اللغة الأم',
     advanced: 'مستوى متقدم',
+    copyRight: 'جميع الحقوق محفوظة ل عبدالرَّحمن السَّيد ©',
 }
