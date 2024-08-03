@@ -14,7 +14,7 @@
 <script setup lang="ts">
 const i18n = useI18n()
 useHead({
-    title: `${i18n.t('blog')} | Abdurrahman`,
+    title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`,
 })
 const { data: posts } = await useAsyncData('get-all-posts', () => queryContent('/blog').sort({ date: -1 }).find())
 const formatDate = (dateString: string): string => {

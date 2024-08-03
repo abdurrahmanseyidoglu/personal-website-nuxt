@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    // Page transition
+    // app: {
+    //     pageTransition: { name: 'page', mode: 'out-in' }
+    // },
+
     // Devtools
-    devtools: {enabled: true},
+    devtools: { enabled: true },
     modules: [
         '@nuxt/content',
         "@nuxtjs/google-fonts",
@@ -34,12 +39,17 @@ export default defineNuxtConfig({
                 "iso": 'en-US',
                 "file": "en-US.ts",
                 "dir": "ltr",
+                //Custom Properties
+                "langName": "English"
             },
             {
                 "code": 'ar',
                 "iso": 'ar-SY',
                 "dir": 'rtl',
-                "file": "ar-SY.ts"
+                "file": "ar-SY.ts",
+                //Custom Properties
+                "langName": "العربيّة"
+
             }
         ],
         defaultLocale: 'en',

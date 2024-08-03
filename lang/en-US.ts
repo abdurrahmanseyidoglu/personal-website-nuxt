@@ -5,6 +5,7 @@ export default {
     dark: 'Dark',
     light: 'Light',
     hi: 'Hi, I\'m Abdurrahman',
+    abdurrahman:'Abdurrahman',
     summery: 'A computer engineer and a front-end developer.',
     experience: 'PROFESSIONAL EXPERIENCE',
     november: 'November',
@@ -34,5 +35,5 @@ export default {
     english: 'English',
     turkish: 'Turkish',
     native: 'Native',
-    intermediate: 'Intermediate',
+    advanced: 'advanced',
 }

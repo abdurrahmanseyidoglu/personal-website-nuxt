@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+const i18n = useI18n()
 interface ContentData {
   title?: string;
   description?: string;
@@ -24,10 +25,10 @@ const { data } = await useAsyncData<ContentData>(`${path}`, () =>
 const contentData = data as Ref<ContentData | null>
 
 useHead({
-  title: contentData.value?.title ? `${contentData.value.title} | Abdurrahman` : "Abdurrahman",
+  title: contentData.value?.title ? `${contentData.value.title} | ${i18n.t('abdurrahman')}` : `${i18n.t('abdurrahman')}`,
 })
 useSeoMeta({
-  ogTitle: contentData.value?.title ? `${contentData.value.title} | Abdurrahman` : "Abdurrahman",
+  ogTitle: contentData.value?.title ? `${contentData.value.title} | ${i18n.t('abdurrahman')}` : `${i18n.t('abdurrahman')}`,
   description: contentData.value?.description ? contentData.value.description : "Abdurrahman\'s Personal website",
   ogDescription: contentData.value?.description ? contentData.value.description : "Abdurrahman\'s Personal website",
   ogImage: contentData.value?.cover ? `/images/blog/${contentData.value.cover}` : '/images/my-icon.png',

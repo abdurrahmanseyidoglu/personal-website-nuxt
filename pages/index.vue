@@ -69,35 +69,34 @@
     </div>
 </template>
 <script setup lang="ts">
-
+const i18n = useI18n()
 const programmingLanguages = ref(['HTML', 'CSS', 'JavaScript', 'TypeScript']);
 const librariesAndFrameworks = ref(['Vue', 'Nuxt', 'Pinia', 'Vuex', 'React', 'Inertia.js', 'Blade template engine', 'Tailwind CSS', 'SCSS', 'Bootstrap']);
 const languages = ref([
-    { name: 'Arabic', proficiency: 'Native' },
-    { name: 'English', proficiency: 'Intermediate' },
-    { name: 'Turkish', proficiency: 'Intermediate' }
+    { name: `${i18n.t('arabic')}`, proficiency: `${i18n.t('native')}` },
+    { name: `${i18n.t('english')}`, proficiency: `${i18n.t('advanced')}` },
+    { name: `${i18n.t('turkish')}`, proficiency: `${i18n.t('advanced')}` }
 ])
-const i18n = useI18n();
 useHead({
-    title: `${i18n.t('home')} | Abdurrahman`,
+    title: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
 })
 
 // Employment Data
 const ImtilakJobPoints = [
     {
-        'point_title': 'Developed and managed Server-side-render web applications using Nuxt.js',
+        'point_title': `${i18n.t('imtilakPoint1')}`,
         'point_links': []
     },
     {
-        'point_title': 'Successfully constructed the Imtilak-Global website from the ground up.',
+        'point_title': `${i18n.t('imtilakPoint2')}`,
         'point_links': []
     },
     {
-        'point_title': 'Proficiently crafted dynamic single-page applications using Vue.js with Server-side-rendering using Inertia.js library.',
+        'point_title': `${i18n.t('imtilakPoint3')}`,
         'point_links': []
     },
     {
-        'point_title': ' Designed captivating landing pages employing Blade, SCSS, and JavaScript | Examples:',
+        'point_title': `${i18n.t('imtilakPoint4')}`,
         'point_links': [
             {
                 'point_title': '[1]',
@@ -126,11 +125,11 @@ const ImtilakJobPoints = [
         ]
     },
     {
-        'point_title': 'Exemplified expertise in webpage optimization, resulting in a substantial performance boost for a website.',
+        'point_title': `${i18n.t('imtilakPoint5')}`,
         'point_links': []
     },
     {
-        'point_title': 'Led the development of the Oragon Website project.',
+        'point_title': `${i18n.t('imtilakPoint6')}`,
         'point_links': []
     },
 
@@ -138,19 +137,19 @@ const ImtilakJobPoints = [
 ]
 const InceJobPoints = [
     {
-        'point_title': 'Build and refactor user and admin dashboards utilizing React.js, TailwindCss, Typescript and Bootstrap',
+        'point_title': `${i18n.t('incePoint1')}`,
         'point_links': []
     },
     {
-        'point_title': 'Designed and developed webpages using HTML, CSS, and JavaScript, ensuring cross-browser compatibility and responsiveness',
+        'point_title': `${i18n.t('incePoint2')}`,
         'point_links': []
     },
     {
-        'point_title': 'Improved user interface (UI) and user experience (UX) by implementing modern design principles and responsive layouts',
+        'point_title': `${i18n.t('incePoint3')}`,
         'point_links': []
     },
     {
-        'point_title': 'Created comprehensive documentation including project specifications, technical documentation, and user manuals to facilitate smooth project handover and support future maintenance',
+        'point_title': `${i18n.t('incePoint4')}`,
         'point_links': []
     },
 ]
