@@ -1,13 +1,17 @@
 <template>
-<p>{{$t('copyRight')}} {{new Date().getFullYear()}}</p>
+  <footer class="footer">
+    <p class="copy-right">{{ $t('copyRight') }} {{ new Date().getFullYear() }}</p>
+    <div class="footer-links">
+      <a :href="link.link" target="_blank" rel="noopener noreferrer" v-for="link in footerLinks" :key="link.link">
+        <Icon :name="`grommet-icons:${link.icon}`" size="1.5rem" class="text-neutral-800 dark:text-slate-200"/>
+      </a>
+    </div>
+  </footer>
 </template>
 <style lang="scss">
-h1{
-  color: red;
-}
+@import './Footer';
 </style>
 <script setup lang="ts">
-const i18n = useI18n()
 const footerLinks = [
   {
     'platformName': 'GitHub',
@@ -18,6 +22,11 @@ const footerLinks = [
     'platformName': 'LinkedIn',
     'link': 'https://www.linkedin.com/in/abdurrahmanseyidoglu/',
     'icon': 'linkedin',
+  },
+  {
+    'platformName': 'X',
+    'link': 'https://x.com/llseyidoglu',
+    'icon': 'x',
   }
 ]
 </script>

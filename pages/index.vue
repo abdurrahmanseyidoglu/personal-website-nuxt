@@ -69,6 +69,8 @@
     </div>
 </template>
 <script setup lang="ts">
+import { ImtilakJobPoints , InceJobPoints } from '~/personal-data/employment-data';
+
 const i18n = useI18n()
 const programmingLanguages = ref(['HTML', 'CSS|SCSS', 'JavaScript', 'TypeScript', 'PHP', 'SQL']);
 const librariesAndFrameworks = ref(['Vue', 'Nuxt', 'Pinia', 'Vuex', 'React', 'Inertia.js', 'Laravel', 'Blade template engine', 'Tailwind CSS', 'Bootstrap']);
@@ -81,78 +83,7 @@ useHead({
     title: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
 })
 
-// Employment Data
-const ImtilakJobPoints = [
-    {
-        'point_title': `${i18n.t('imtilakPoint1')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('imtilakPoint2')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('imtilakPoint3')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('imtilakPoint4')}`,
-        'point_links': [
-            {
-                'point_title': '[1]',
-                'point_href': 'https://www.imtilak.net/en/landing/istanbul-city-center'
-            },
-            {
-                'point_title': '[2]',
-                'point_href': 'https://www.imtilak.net/en/landing/trabzon-oversea'
-            },
-            {
-                'point_title': '[3]',
-                'point_href': 'https://www.imtilak.net/en/landing/new-large-investments'
-            },
-            {
-                'point_title': '[4]',
-                'point_href': 'https://www.imtilak.net/en/landing/toskana-project'
-            },
-            {
-                'point_title': '[5]',
-                'point_href': 'https://www.imtilak.net/ar/landing/sapanca-lake-villas'
-            },
-            {
-                'point_title': '[6]',
-                'point_href': 'https://www.imtilak.net/en/landing/riva-villas'
-            },
-        ]
-    },
-    {
-        'point_title': `${i18n.t('imtilakPoint5')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('imtilakPoint6')}`,
-        'point_links': []
-    },
 
-
-]
-const InceJobPoints = [
-    {
-        'point_title': `${i18n.t('incePoint1')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('incePoint2')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('incePoint3')}`,
-        'point_links': []
-    },
-    {
-        'point_title': `${i18n.t('incePoint4')}`,
-        'point_links': []
-    },
-]
 </script>
 
 <style lang="scss">
