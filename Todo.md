@@ -13,7 +13,6 @@
 - [x] Find a way to add og images and SEO tags in general sing ```Front-matter```
 - [x] Add footer section that has LinkedIn and GitHub accounts
 - [x] Add multilingual feature
-- [ ] unify the data (resume data, footer links and so on,,,)
 - [x] Finish Footer (Styles and Links)
 
 
