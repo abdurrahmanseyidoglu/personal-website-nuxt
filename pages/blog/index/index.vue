@@ -19,7 +19,7 @@ useHead({
 })
 
 const {data: posts} = await useAsyncData('get-all-posts', () => {
-  return queryContent(i18n.locale.value + '/blog').sort({date: -1}).find()
+  return queryContent('blog').sort({date: -1}).find()
 })
 
 const formatDate = (dateString: string): string => {

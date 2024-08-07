@@ -5,9 +5,9 @@
       <CustomLink :href="`/blog`" :title="$t('blog')" />
       <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
     </div>
-    <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
+    <!-- <NuxtLink v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)">
       {{ locale.langName }}
-    </NuxtLink>
+    </NuxtLink> -->
     <div @click="handleThemeToggle" class="theme-toggle">
       <Icon v-show="!isDark" name="ic:round-nights-stay" size="1.5rem" class="text-neutral-800 dark:text-slate-200" />
       <Icon v-show="isDark" name="material-symbols:light-mode-outline-rounded" size="1.5rem" color="white" />
@@ -19,7 +19,6 @@
 @import './Navbar';
 </style>
 <script lang="ts" setup>
-
 const isDark = ref(true)
 onMounted(() => {
   

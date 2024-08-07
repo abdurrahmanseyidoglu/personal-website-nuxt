@@ -16,11 +16,10 @@ interface ContentData {
   tags?: string[];
 }
 
-const { path } = useRoute()
-const { data } = await useAsyncData<ContentData>(`${path}`, () =>
-  queryContent().where({
-    _path: path
-  }).findOne())
+const route = useRoute()
+
+const { data } = await useAsyncData<ContentData>(`${route.path}`, () =>
+  queryContent().findOne())
 
 const contentData = data as Ref<ContentData | null>
 
