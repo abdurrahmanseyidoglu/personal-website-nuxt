@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     // },
 
     // Devtools
-    devtools: { enabled: true },
+    devtools: {enabled: true},
     modules: [
         '@nuxt/content',
         "@nuxtjs/google-fonts",
@@ -20,8 +20,10 @@ export default defineNuxtConfig({
         documentDriven: {},
         highlight: {
             theme: 'github-dark'
-
-        }
+        },
+        contentHead:true,
+        defaultLocale: 'en',
+        locales: ['en', 'ar']
     },
     googleFonts: {
         families: {
