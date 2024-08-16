@@ -3,7 +3,7 @@
     <p class="title">{{ `(${posts?.length} Posts) ` }}</p>
     <ul class="posts-wrapper">
       <li v-for="post in posts" :key="post._path">
-        <MdCustomLink :title="post.title" :href="post._path" class="post-title"/>
+        <MdCustomLink :title="post.title" :href="post._path" class="post-title" />
         <span class="date">{{ formatDate(post.date) }}</span>
       </li>
     </ul>
@@ -11,16 +11,22 @@
 </template>
 
 <script setup lang="ts">
-
 const i18n = useI18n()
 
 useHead({
-  title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`,
+  title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`
 })
 
-const {data: posts} = await useAsyncData('get-all-posts', () => {
-  return queryContent('blog').sort({date: -1}).find()
-})
+const { data: posts } = await useAsyncData('get-all-posts', () =>
+  queryContent(`${i18n.locale.value}`, 'blog').sort({ date: -1 }).find()
+)
+console.log(i18n.locale.value)
+
+// const { data: page } = await useAsyncData('index', () => queryContent(`${i18n.locale.value}`,'blog').findOne())
+// if (!page.value) {
+//   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+// }
+// console.log(page);
 
 const formatDate = (dateString: string): string => {
   if (dateString) {

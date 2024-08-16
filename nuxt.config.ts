@@ -12,7 +12,8 @@ export default defineNuxtConfig({
         "@nuxtjs/google-fonts",
         "@nuxtjs/i18n",
         "nuxt-icon",
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
+ 
     ],
 
     // Nuxt Content options
@@ -22,8 +23,8 @@ export default defineNuxtConfig({
             theme: 'github-dark'
         },
         contentHead:true,
-        defaultLocale: 'en',
-        locales: ['en', 'ar']
+        // defaultLocale: 'en',
+        // locales: ['en', 'ar']
     },
     googleFonts: {
         families: {
@@ -34,12 +35,12 @@ export default defineNuxtConfig({
 
     i18n: {
         vueI18n: './i18n.config.ts',
-        strategy: 'prefix_except_default',
+        strategy: 'prefix',
         locales: [
             {
                 "code": 'en',
                 "iso": 'en-US',
-                "file": "en-US.ts",
+                "file": "en-US.json",
                 "dir": "ltr",
                 //Custom Properties
                 "langName": "English"
@@ -48,7 +49,7 @@ export default defineNuxtConfig({
                 "code": 'ar',
                 "iso": 'ar-SY',
                 "dir": 'rtl',
-                "file": "ar-SY.ts",
+                "file": "ar-SY.json",
                 //Custom Properties
                 "langName": "العربيّة"
 
@@ -56,7 +57,7 @@ export default defineNuxtConfig({
         ],
         defaultLocale: 'en',
         lazy: true,
-        langDir: 'lang',
+        langDir: 'locales',
 
     }
 })

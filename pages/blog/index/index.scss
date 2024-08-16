@@ -1,23 +1,21 @@
 .blog-page {
-    .title {
-        font-size: 3rem;
-        font-weight: 600
-    }
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
 
-    .posts-wrapper {
-        li{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .post-title{
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                margin-top: 2rem;
-                list-style: inside square;
-            }
-        }
-        
-        
+  .posts-wrapper {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .post-title {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        list-style: inside square;
+      }
     }
+  }
 }

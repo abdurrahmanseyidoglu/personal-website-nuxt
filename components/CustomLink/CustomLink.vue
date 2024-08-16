@@ -1,5 +1,8 @@
 <template>
-  <NuxtLink :class="`custom-link ${route.fullPath === props.href && 'active'}`" :to="localePath(`${props.href}`)">
+  <NuxtLink
+    :class="`custom-link ${route.fullPath === props.href && 'active'}`"
+    :to="localePath(`${props.href}`)"
+  >
     {{ props.title }}
   </NuxtLink>
 </template>
@@ -8,7 +11,7 @@
 </style>
 <script setup lang="ts">
 const props = defineProps<{
-  href: string,
+  href: string
   title: string
 }>()
 const route = useRoute()

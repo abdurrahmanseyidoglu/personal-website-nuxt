@@ -3,8 +3,7 @@
     {{ props.title }}
   </a>
 </template>
-<style lang="scss">
-</style>
+<style lang="scss"></style>
 <script setup lang="ts">
 const props = defineProps({
   href: String,
@@ -30,14 +29,12 @@ const props = defineProps({
     background-color: $blue;
     bottom: -3px;
     z-index: 1;
-    transition: all ease-in-out .2s;
+    transition: all ease-in-out 0.2s;
     inset-inline-start: 0;
-
   }
 
   &:hover:after {
     width: 100%;
   }
-
 }
 </style>

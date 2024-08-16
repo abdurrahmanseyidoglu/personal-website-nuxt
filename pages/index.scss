@@ -1,88 +1,76 @@
 @import '../assets/global_scss/variables';
 
 .home {
-    .about-me {
-        .my-icon {
-            width: 102px;
-        }
-
-        .name {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
-
-        .description {
-            margin-block: 1rem;
-        }
-
-        .my-skills {
-
-            .skills,
-            .sub-skills {
-                list-style: inside;
-            }
-
-            .title {
-                margin-bottom: 1rem;
-                font-weight: 500;
-                font-size: 1.5rem;
-                margin-top: 2rem;
-            }
-
-            .sub-skill-title {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-                font-weight: 500;
-                font-size: 1.3rem;
-                padding: .5rem;
-                background-color: $blue-bg;
-                width: fit-content;
-                border-radius: .5rem;
-            }
-
-
-        }
-
-
+  .about-me {
+    .my-icon {
+      width: 102px;
     }
 
-    .employment-history {
-        .employment-title {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 1rem;
-            margin-top: 2rem;
-        }
-
-        .employment-cards-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-        }
-
-
+    .name {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-top: 1rem;
     }
+
+    .description {
+      margin-block: 1rem;
+    }
+
+    .my-skills {
+      .skills,
+      .sub-skills {
+        list-style: inside;
+      }
+
+      .title {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .sub-skill-title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        background-color: $blue-bg;
+        width: fit-content;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  .employment-history {
+    .employment-title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+
+    .employment-cards-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
 }
 
-
-
 .dark {
-    .home {
-        // .about-me {
-        //     .my-skills {
-        //         .sub-skill-title {
-        //             &::before {
-        //                 color: #e2e8f0;
-        //             }
+  .home {
+    // .about-me {
+    //     .my-skills {
+    //         .sub-skill-title {
+    //             &::before {
+    //                 color: #e2e8f0;
+    //             }
 
-        //         }
+    //         }
 
-        //     }
-        // }
-    }
-
-
+    //     }
+    // }
+  }
 }
