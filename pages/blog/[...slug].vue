@@ -9,12 +9,7 @@
 
 <script setup lang="ts">
 const i18n = useI18n()
-interface ContentData {
-  title?: string
-  description?: string
-  cover?: string
-  tags?: string[]
-}
+import type { ContentData } from '~/types/Interfaces';
 
 const route = useRoute()
 
