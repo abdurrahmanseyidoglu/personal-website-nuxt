@@ -13,7 +13,7 @@ export default defineNuxtConfig({
         "@nuxtjs/i18n",
         "nuxt-icon",
         "@nuxtjs/tailwindcss",
- 
+        "@nuxt/eslint"
     ],
 
     // Nuxt Content options

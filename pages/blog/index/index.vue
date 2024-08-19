@@ -20,7 +20,6 @@ useHead({
 const { data: posts } = await useAsyncData('get-all-posts', () =>
   queryContent(`${i18n.locale.value}`, 'blog').sort({ date: -1 }).find()
 )
-console.log(i18n.locale.value)
 
 // const { data: page } = await useAsyncData('index', () => queryContent(`${i18n.locale.value}`,'blog').findOne())
 // if (!page.value) {

@@ -17,7 +17,6 @@ interface ContentData {
 }
 
 const route = useRoute()
-console.log(route.path)
 
 const { data } = await useAsyncData<ContentData>(`get-post`, () =>
   queryContent(`${route.path}`).findOne()
