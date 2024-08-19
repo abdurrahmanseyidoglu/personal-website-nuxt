@@ -78,8 +78,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import type { JobPoint,Language } from '~/types/Interfaces';
+
 const i18n = useI18n()
-const ImtilakJobPoints = [
+const ImtilakJobPoints : JobPoint[] = [
   {
     point_title: i18n.t('imtilakPoint1'),
     point_links: []
@@ -131,7 +133,7 @@ const ImtilakJobPoints = [
   }
 ]
 
-const InceJobPoints = [
+const InceJobPoints:JobPoint[] = [
   {
     point_title: i18n.t('incePoint1'),
     point_links: []
@@ -149,8 +151,8 @@ const InceJobPoints = [
     point_links: []
   }
 ]
-const programmingLanguages = ref(['HTML', 'CSS|SCSS', 'JavaScript', 'TypeScript', 'PHP', 'SQL'])
-const librariesAndFrameworks = ref([
+const programmingLanguages = ref<string[]>(['HTML', 'CSS|SCSS', 'JavaScript', 'TypeScript', 'PHP', 'SQL'])
+const librariesAndFrameworks = ref<string[]>([
   'Vue',
   'Nuxt',
   'Pinia',
@@ -162,7 +164,8 @@ const librariesAndFrameworks = ref([
   'Tailwind CSS',
   'Bootstrap'
 ])
-const languages = ref([
+
+const languages = ref<Language[]>([
   { name: `${i18n.t('arabic')}`, proficiency: `${i18n.t('native')}` },
   { name: `${i18n.t('english')}`, proficiency: `${i18n.t('advanced')}` },
   { name: `${i18n.t('turkish')}`, proficiency: `${i18n.t('advanced')}` }
