@@ -1,66 +1,68 @@
 ---
-title: Hello, World AR!
-description: This is my very first blog post and I'm so excited to share it with you!
+title: مرحبًا بالعالم بالعربي!
+description: هذه أول تدوينة لي وأنا متحمس جدًا لمشاركتها معكم!
 date: 2023-05-23
 cover: nasa-Q1p7bh3SHj8-unsplash.jpg
 tags:
-  - blog
+  - مدونة
   - tag2
   - tag3
   - tag4
   - i18n
 ---
 
-# Hello, Arabic 👋🏻
+# مرحبًا بالعربية 👋🏻
 
-This is a paragraph.
+هذه فقرة.
 
-This is another paragraph.
+وهذه فقرة أخرى.
 
-![Earth from Space](/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg)
+![الأرض من الفضاء](/images/blog/nasa-Q1p7bh3SHj8-unsplash.jpg)
 
-## This is a heading 2
+## هذا عنوان 2
 
-You can use lists
+يمكنك استخدام القوائم
 
-- list item 1
-- list item 2
-- list item 3
+- عنصر قائمة 1
+- عنصر قائمة 2
+- عنصر قائمة 3
 
-You can use code blocks
+يمكنك استخدام كتل الشيفرات
 
 ```js
 const hello = "world";
 console.log(hello);
 ```
 
-You can use blockquotes
+يمكنك استخدام الاقتباسات
 
-> This is a blockquote
+> هذا اقتباس
 
-You can use links
+يمكنك استخدام الروابط
 
-[This is a link](https://www.google.com)
+[هذا رابط](https://www.google.com)
 
-You can use tables
+يمكنك استخدام الجداول
 
-| Column 1 | Column 2 |
+| العمود 1 | العمود 2 |
 | -------- | -------- |
-| Row 1    | Row 1    |
-| Row 2    | Row 2    |
-| Row 3    | Row 3    |
+| الصف 1   | الصف 1   |
+| الصف 2   | الصف 2   |
+| الصف 3   | الصف 3   |
 
-You can use horizontal rules
+يمكنك استخدام الخطوط الأفقية
 
 ---
 
-You can use emphasis
+يمكنك استخدام التأكيد
 
-**This is bold**
+**هذا غامق**
 
-_This is italic_
+_هذا مائل_
 
 
 
-::md-custom-link{href="google.com" title="This is a google link using custom component"}
+::md-custom-link{href="google.com" title="هذا رابط جوجل باستخدام مكون مخصص"}
 ::
+
+This translation preserves the structure and meaning of your original blog post in Arabic.

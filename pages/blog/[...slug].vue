@@ -19,8 +19,8 @@ interface ContentData {
 const route = useRoute()
 console.log(route.path)
 
-const { data } = await useAsyncData<ContentData>(`${i18n.locale.value},${route.path}`, () =>
-  queryContent().findOne()
+const { data } = await useAsyncData<ContentData>(`get-post`, () =>
+  queryContent(`${route.path}`).findOne()
 )
 
 const contentData = data as Ref<ContentData | null>
