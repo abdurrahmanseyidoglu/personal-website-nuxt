@@ -46,3 +46,9 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 </script>
+<style lang="scss">
+// keep code direction left to right in Arabic
+pre {
+  direction: ltr !important;
+}
+</style>
