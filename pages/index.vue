@@ -18,7 +18,7 @@
         <p class="employment-title">{{ $t('experience') }}</p>
         <div class="employment-cards-wrapper">
           <EmploymentCard
-            :date="`${$t('november')} 2021 - ${$t('present')}`"
+            :date="`${$t('november')} 2021 - ${$t('august')} 2024`"
             :jobTile="$t('frontEnd')"
             :companyName="$t('imtilakGroup')"
             :companyLocation="`${$t('istanbul')} / ${$t('turkey')}`"
