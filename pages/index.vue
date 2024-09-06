@@ -78,10 +78,10 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { JobPoint,Language } from '~/types/Interfaces';
+import type { JobPoint, Language } from '~/types/Interfaces'
 
 const i18n = useI18n()
-const ImtilakJobPoints : JobPoint[] = [
+const ImtilakJobPoints: JobPoint[] = [
   {
     point_title: i18n.t('imtilakPoint1'),
     point_links: []
@@ -133,7 +133,7 @@ const ImtilakJobPoints : JobPoint[] = [
   }
 ]
 
-const InceJobPoints:JobPoint[] = [
+const InceJobPoints: JobPoint[] = [
   {
     point_title: i18n.t('incePoint1'),
     point_links: []
@@ -151,7 +151,14 @@ const InceJobPoints:JobPoint[] = [
     point_links: []
   }
 ]
-const programmingLanguages = ref<string[]>(['HTML', 'CSS|SCSS', 'JavaScript', 'TypeScript', 'PHP', 'SQL'])
+const programmingLanguages = ref<string[]>([
+  'HTML',
+  'CSS|SCSS',
+  'JavaScript',
+  'TypeScript',
+  'PHP',
+  'SQL'
+])
 const librariesAndFrameworks = ref<string[]>([
   'Vue',
   'Nuxt',

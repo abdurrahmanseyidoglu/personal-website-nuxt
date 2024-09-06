@@ -30,7 +30,7 @@
 @import './EmploymentCard.scss';
 </style>
 <script lang="ts" setup>
-import type { JobPoint } from '~/types/Interfaces';
+import type { JobPoint } from '~/types/Interfaces'
 const props = defineProps<{
   date: string
   jobTile: string
@@ -39,5 +39,4 @@ const props = defineProps<{
   jobDescription?: string
   jobPoints: JobPoint[]
 }>()
-
 </script>
