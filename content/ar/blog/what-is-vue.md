@@ -2,7 +2,7 @@
 title: ما هو Vue.js؟
 description: يشرح هذا المقال الجوانب الأساسية لـ Vue.js
 date: 2024-09-06
-cover: vue-logo.jpeg
+cover: Vue-Blog-Cover.png
 tags:
   - Vue
   - Front-end
