@@ -5,15 +5,22 @@ export default defineNuxtConfig({
     //     pageTransition: { name: 'page', mode: 'out-in' }
     // },
 
+    //Sitemap
+    site: {
+        url: 'https://abdurrahmanseyidoglu.com/',
+        name: 'Abdurrahman Seyidoglu'
+      },
+
     // Devtools
     devtools: {enabled: true},
     modules: [
-        '@nuxt/content',
-        "@nuxtjs/google-fonts",
-        "@nuxtjs/i18n",
-        "nuxt-icon",
-        "@nuxtjs/tailwindcss",
-        "@nuxt/eslint"
+      '@nuxt/content',
+      "@nuxtjs/google-fonts",
+      "@nuxtjs/i18n",
+      "nuxt-icon",
+      "@nuxtjs/tailwindcss",
+      "@nuxt/eslint",
+      "@nuxtjs/sitemap"
     ],
 
     // Nuxt Content options

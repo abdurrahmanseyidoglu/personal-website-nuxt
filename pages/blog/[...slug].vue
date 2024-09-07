@@ -45,4 +45,7 @@ useSeoMeta({
 pre {
   direction: ltr !important;
 }
+th,tr{
+  word-break: keep-all;
+}
 </style>
