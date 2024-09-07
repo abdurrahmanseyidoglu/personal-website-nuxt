@@ -1,71 +1,77 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    // Page transition
-    // app: {
-    //     pageTransition: { name: 'page', mode: 'out-in' }
-    // },
+  // Page transition
+  // app: {
+  //     pageTransition: { name: 'page', mode: 'out-in' }
+  // },
 
-    //Sitemap
-    site: {
-        url: 'https://abdurrahmanseyidoglu.com/',
-        name: 'Abdurrahman Seyidoglu'
-      },
+  //Sitemap
+  site: {
+    url: 'https://abdurrahmanseyidoglu.com/',
+    name: 'Abdurrahman Seyidoglu'
+  },
 
-    // Devtools
-    devtools: {enabled: true},
-    modules: [
-      '@nuxt/content',
-      "@nuxtjs/google-fonts",
-      "@nuxtjs/i18n",
-      "nuxt-icon",
-      "@nuxtjs/tailwindcss",
-      "@nuxt/eslint",
-      "@nuxtjs/sitemap"
-    ],
 
-    // Nuxt Content options
-    content: {
-        documentDriven: {},
-        highlight: {
-            theme: 'github-dark'
-        },
-        contentHead:true,
-        // defaultLocale: 'en',
-        // locales: ['en', 'ar']
+
+
+  // Devtools
+  devtools: { enabled: true },
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/i18n',
+    'nuxt-icon',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/eslint',
+    '@nuxtjs/sitemap',
+    'nuxt-gtag'
+  ],
+
+  //Gtag
+  gtag: {
+    id: 'GTM-58JWK36K'
+  },
+
+  // Nuxt Content options
+  content: {
+    documentDriven: {},
+    highlight: {
+      theme: 'github-dark'
     },
-    googleFonts: {
-        families: {
-            'Roboto Mono': [400, 500, 600, 700],
-            'Cairo': [400, 500, 600, 700]
-        }
-    },
-
-
-    i18n: {
-        vueI18n: './i18n.config.ts',
-        strategy: 'prefix',
-        locales: [
-            {
-                "code": 'en',
-                "iso": 'en-US',
-                "file": "en-US.json",
-                "dir": "ltr",
-                //Custom Properties
-                "langName": "English"
-            },
-            {
-                "code": 'ar',
-                "iso": 'ar-SY',
-                "dir": 'rtl',
-                "file": "ar-SY.json",
-                //Custom Properties
-                "langName": "العربيّة"
-
-            }
-        ],
-        defaultLocale: 'en',
-        lazy: true,
-        langDir: 'locales',
-
+    contentHead: true
+    // defaultLocale: 'en',
+    // locales: ['en', 'ar']
+  },
+  googleFonts: {
+    families: {
+      'Roboto Mono': [400, 500, 600, 700],
+      Cairo: [400, 500, 600, 700]
     }
+  },
+
+  i18n: {
+    vueI18n: './i18n.config.ts',
+    strategy: 'prefix',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.json',
+        dir: 'ltr',
+        //Custom Properties
+        langName: 'English'
+      },
+      {
+        code: 'ar',
+        iso: 'ar-SY',
+        dir: 'rtl',
+        file: 'ar-SY.json',
+        //Custom Properties
+        langName: 'العربيّة'
+      }
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales'
+  }
 })
