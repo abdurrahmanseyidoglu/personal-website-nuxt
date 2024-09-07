@@ -1,3 +1,13 @@
+---
+title: Comparison of `var`, `let`, and `const`
+description: Comparison of `var`, `let`, and `const`
+date: 2024-09-07
+cover: let-const-var.jpeg
+tags:
+  - JS
+  - Front-End
+---
+
 ## Comparison of `var`, `let`, and `const`
 
 In JavaScript, variable declarations can be made using three keywords: `var`, `let`, and `const`. Each of these keywords has distinct characteristics regarding scope, redeclaration, reassignment, and hoisting. Understanding these differences is crucial for writing clean and error-free code.
