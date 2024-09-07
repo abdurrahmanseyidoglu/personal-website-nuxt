@@ -11,9 +11,6 @@ export default defineNuxtConfig({
     name: 'Abdurrahman Seyidoglu'
   },
 
-
-
-
   // Devtools
   devtools: { enabled: true },
   modules: [
@@ -29,9 +26,9 @@ export default defineNuxtConfig({
 
   //Gtag
   gtag: {
-    id: 'GTM-58JWK36K'
+    enabled: process.env.NODE_ENV === 'production',
+    id: process.env.NUXT_GTAG_ID
   },
-
   // Nuxt Content options
   content: {
     documentDriven: {},
