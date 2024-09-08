@@ -45,7 +45,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       'Roboto Mono': [400, 500, 600, 700],
-      Cairo: [400, 500, 600, 700]
+      Rubik: [400, 500, 600, 700]
     }
   },
 
