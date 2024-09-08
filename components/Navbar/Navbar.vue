@@ -12,37 +12,42 @@
     >
       {{ locale.langName }}
     </NuxtLink>
-    <div @click="handleThemeToggle" class="theme-toggle">
+    <div class="theme-toggle">
       <Icon
-        v-show="!isDark"
         name="ic:round-nights-stay"
         size="1.5rem"
         class="text-neutral-800 dark:text-slate-200"
+        @click="handleThemeChange('system')"
       />
       <Icon
-        v-show="isDark"
         name="material-symbols:light-mode-outline-rounded"
         size="1.5rem"
-        color="white"
+        color="text-neutral-800 dark:text-slate-200"
+        @click="handleThemeChange('light')"
       />
+      <Icon
+      name="material-symbols:monitor-outline"
+      size="1.5rem"
+      color="text-neutral-800 dark:text-slate-200"
+      @click="handleThemeChange('dark')"
+    />
     </div>
+   
   </div>
 </template>
-<style lang="scss">
-@import './Navbar';
-</style>
+
 <script lang="ts" setup>
-const isDark = ref(true)
-onMounted(() => {})
-const handleThemeToggle = () => {
-  if (typeof document !== 'undefined') {
-    isDark.value = !isDark.value
-    document.documentElement.classList.toggle('dark')
-  }
-}
+const colorMode = useColorMode()
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const availableLocales = computed(() => {
   return locales.value.filter((i) => i.code !== locale.value)
 })
+const handleThemeChange = (themeType: string)=>{
+  colorMode.preference=themeType
+}
 </script>
+
+<style lang="scss">
+@import './Navbar';
+</style>

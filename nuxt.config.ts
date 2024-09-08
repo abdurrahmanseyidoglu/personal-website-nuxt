@@ -22,7 +22,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@nuxtjs/color-mode'
   ],
 
   //Gtag
@@ -31,6 +32,14 @@ export default defineNuxtConfig({
     id: process.env.NUXT_GTAG_ID
   },
 
+  //Color mode:
+  colorMode: {
+    preference: 'system',
+    fallback: 'light', 
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'nuxt-color-mode'
+  },
   // Nuxt Content options
   content: {
     documentDriven: {},
