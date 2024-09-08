@@ -90,7 +90,7 @@ app.component('my-button', {
 ```
 
 In this example:
-- **`my-button`**: This is a custom component that renders a button.
+- `my-button`: This is a custom component that renders a button.
 - **@click**: Vue’s shorthand for event handling. It listens for a click event and triggers the `handleClick` method.
 
 You can then use this component in your app’s template like this:
@@ -138,9 +138,9 @@ Here’s the HTML part:
 </div>
 ```
 
-- **`count`**: This is the reactive data.
-- **`increment` method**: Increases the count when the button is clicked.
-- **`{{ count }}`**: Interpolates the reactive count data into the DOM.
+- `count`: This is the reactive data.
+- `increment` method: Increases the count when the button is clicked.
+- `{{ count }}`: Interpolates the reactive count data into the DOM.
 
 When the user clicks the button, the `increment` method is called, updating the `count` variable. Since `count` is reactive, Vue automatically updates the DOM to reflect the new count value. You don’t need to write any extra code to manage the UI updates.
 

@@ -19,6 +19,7 @@
     "@nuxtjs/sitemap": "^6.0.1",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vue/test-utils": "^2.4.6",
+    "@vueuse/core": "^11.0.3",
     "happy-dom": "^13.10.1",
     "nuxt": "^3.13.1",
     "nuxt-gtag": "^3.0.1",

@@ -45,6 +45,13 @@ useSeoMeta({
 pre {
   direction: ltr !important;
 }
+
+code {
+  background-color: var(--tw-prose-pre-bg);
+  padding: 0.5rem;
+  border-radius: 5px !important;
+  color: white !important;
+}
 th,
 tr {
   word-break: keep-all;

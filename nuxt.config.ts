@@ -13,6 +13,7 @@ export default defineNuxtConfig({
 
   // Devtools
   devtools: { enabled: true },
+
   modules: [
     '@nuxt/content',
     '@nuxtjs/google-fonts',
@@ -29,6 +30,7 @@ export default defineNuxtConfig({
     enabled: process.env.NODE_ENV === 'production',
     id: process.env.NUXT_GTAG_ID
   },
+
   // Nuxt Content options
   content: {
     documentDriven: {},
@@ -39,6 +41,7 @@ export default defineNuxtConfig({
     // defaultLocale: 'en',
     // locales: ['en', 'ar']
   },
+
   googleFonts: {
     families: {
       'Roboto Mono': [400, 500, 600, 700],
@@ -70,5 +73,7 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
     lazy: true,
     langDir: 'locales'
-  }
+  },
+
+  compatibilityDate: '2024-09-08'
 })

@@ -14,7 +14,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
 
 ### 1. Scope
 
-- **`var`**: 
+- `var`: 
   - **Scope**: `var` is function-scoped or globally scoped. This means that if a variable is declared with `var` inside a function, it is not accessible outside that function. However, if declared outside any function, it can be accessed anywhere in the code.
   
   ```javascript
@@ -31,7 +31,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
   console.log(localVar);   // ReferenceError: localVar is not defined
   ```
 
-- **`let`** and **`const`**: 
+- `let` and `const`: 
   - **Scope**: Both `let` and `const` are block-scoped. This means they are only accessible within the nearest enclosing block (denoted by `{}`), such as within loops or conditionals.
   
   ```javascript
@@ -48,7 +48,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
 
 ### 2. Redeclaration and Reassignment
 
-- **`var`**:
+- `var`:
   - **Redeclaration**: Variables declared with `var` can be redeclared within the same scope without any errors.
   - **Reassignment**: Variables can be reassigned new values.
   
@@ -59,7 +59,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
   console.log(x); // 30
   ```
 
-- **`let`**:
+- `let`:
   - **Redeclaration**: Variables declared with `let` cannot be redeclared in the same scope. Attempting to do so will throw an error.
   - **Reassignment**: Variables can be reassigned new values.
   
@@ -70,7 +70,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
   console.log(y); // 30
   ```
 
-- **`const`**:
+- `const`:
   - **Redeclaration**: Variables declared with `const` cannot be redeclared in the same scope.
   - **Reassignment**: Variables cannot be reassigned after their initial assignment. This makes `const` suitable for constants.
   
@@ -83,7 +83,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
 
 ### 3. Hoisting
 
-- **`var`**: 
+- `var`: 
   - Variables declared with `var` are hoisted to the top of their scope and initialized with `undefined`. This means you can reference them before the declaration in the code.
   
   ```javascript
@@ -92,7 +92,7 @@ In JavaScript, variable declarations can be made using three keywords: `var`, `l
   console.log(a); // 5
   ```
 
-- **`let`** and **`const`**: 
+- `let` and `const`: 
   - Both `let` and `const` are also hoisted but are not initialized. Accessing them before their declaration results in a `ReferenceError`.
   
   ```javascript

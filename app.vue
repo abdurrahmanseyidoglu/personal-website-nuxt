@@ -7,10 +7,6 @@
     <Footer/>
   </div>
 </template>
-
-<style lang="scss">
-@import './assets/global_scss/global-styles';
-</style>
 <script setup lang="ts">
 const {locale} = useI18n();
 watchEffect(() => {
@@ -20,10 +16,10 @@ watchEffect(() => {
       dir: locale.value === 'ar' ? 'rtl' : 'ltr',
       class: 'dark'
     },
-    // bodyAttrs: {
-    //
-    // }
   });
 });
 
 </script>
+<style lang="scss">
+@import './assets/global_scss/global-styles';
+</style>
