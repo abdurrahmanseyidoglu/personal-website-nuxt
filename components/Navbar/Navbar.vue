@@ -17,7 +17,7 @@
         name="ic:round-nights-stay"
         size="1.5rem"
         class="text-neutral-800 dark:text-slate-200"
-        @click="handleThemeChange('system')"
+        @click="handleThemeChange('dark')"
       />
       <Icon
         name="material-symbols:light-mode-outline-rounded"
@@ -29,7 +29,7 @@
       name="material-symbols:monitor-outline"
       size="1.5rem"
       color="text-neutral-800 dark:text-slate-200"
-      @click="handleThemeChange('dark')"
+      @click="handleThemeChange('system')"
     />
     </div>
    
