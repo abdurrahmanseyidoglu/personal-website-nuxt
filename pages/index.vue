@@ -182,8 +182,8 @@ useHead({
 })
 useSeoMeta({
   ogTitle: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
-  description: 'A computer engineer and a front-end developer.',
-  ogDescription: 'A computer engineer and a front-end developer.',
+  description: `${i18n.t('summery')}`,
+  ogDescription: `${i18n.t('summery')}`,
   ogImage: '/images/my-icon.png',
   twitterCard: 'summary_large_image'
 })
