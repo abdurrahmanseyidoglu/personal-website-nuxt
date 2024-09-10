@@ -18,9 +18,6 @@
     </div>
   </footer>
 </template>
-<style lang="scss">
-@import './Footer';
-</style>
 <script setup lang="ts">
 const footerLinks = [
   {
@@ -40,3 +37,7 @@ const footerLinks = [
   }
 ]
 </script>
+<style lang="scss">
+@import './Footer';
+</style>
+

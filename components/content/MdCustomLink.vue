@@ -3,13 +3,14 @@
     {{ props.title }}
   </a>
 </template>
-<style lang="scss"></style>
+
 <script setup lang="ts">
 const props = defineProps({
   href: String,
   title: String
 })
 </script>
+
 <style lang="scss">
 @import '../../assets/global_scss/variables';
 

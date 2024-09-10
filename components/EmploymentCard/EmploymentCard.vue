@@ -26,9 +26,6 @@
     </ul>
   </div>
 </template>
-<style lang="scss">
-@import './EmploymentCard.scss';
-</style>
 <script lang="ts" setup>
 import type { JobPoint } from '~/types/Interfaces'
 const props = defineProps<{
@@ -40,3 +37,7 @@ const props = defineProps<{
   jobPoints: JobPoint[]
 }>()
 </script>
+<style lang="scss">
+@import './EmploymentCard.scss';
+</style>
+

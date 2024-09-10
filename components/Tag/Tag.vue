@@ -1,6 +1,6 @@
 <template>
   <div class="tag">
-    <p>#{{ title }}</p>
+    <p>{{ props.title }}</p>
   </div>
 </template>
 
