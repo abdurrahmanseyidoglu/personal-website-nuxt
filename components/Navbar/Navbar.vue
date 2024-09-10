@@ -26,13 +26,12 @@
         @click="handleThemeChange('light')"
       />
       <Icon
-      name="material-symbols:monitor-outline"
-      size="1.5rem"
-      color="text-neutral-800 dark:text-slate-200"
-      @click="handleThemeChange('system')"
-    />
+        name="material-symbols:monitor-outline"
+        size="1.5rem"
+        color="text-neutral-800 dark:text-slate-200"
+        @click="handleThemeChange('system')"
+      />
     </div>
-   
   </div>
 </template>
 
@@ -43,8 +42,8 @@ const switchLocalePath = useSwitchLocalePath()
 const availableLocales = computed(() => {
   return locales.value.filter((i) => i.code !== locale.value)
 })
-const handleThemeChange = (themeType: string)=>{
-  colorMode.preference=themeType
+const handleThemeChange = (themeType: string) => {
+  colorMode.preference = themeType
 }
 </script>
 

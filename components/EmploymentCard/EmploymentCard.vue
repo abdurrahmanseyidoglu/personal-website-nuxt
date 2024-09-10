@@ -40,4 +40,3 @@ const props = defineProps<{
 <style lang="scss">
 @import './EmploymentCard.scss';
 </style>
-
