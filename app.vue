@@ -19,6 +19,7 @@ useHead({
   }
 })
 
+
 // Watch for language changes
 watch(locale, () => {
   useHead({

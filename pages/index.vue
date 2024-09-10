@@ -180,6 +180,13 @@ const languages = ref<Language[]>([
 useHead({
   title: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`
 })
+useSeoMeta({
+  ogTitle: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
+  description: 'A computer engineer and a front-end developer.',
+  ogDescription: 'A computer engineer and a front-end developer.',
+  ogImage: '/images/my-icon.png',
+  twitterCard: 'summary_large_image'
+})
 </script>
 
 <style lang="scss">
