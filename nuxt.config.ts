@@ -26,11 +26,11 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode'
   ],
 
-  //Gtag
-  gtag: {
-    enabled: process.env.NODE_ENV === 'production',
-    id: process.env.NUXT_GTAG_ID
-  },
+  // //Gtag
+  // gtag: {
+  //   enabled: process.env.NODE_ENV === 'production',
+  //   id: process.env.NUXT_GTAG_ID
+  // },
 
   //Color mode:
   colorMode: {
