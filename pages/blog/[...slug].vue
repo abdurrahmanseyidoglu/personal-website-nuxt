@@ -36,7 +36,7 @@ useSeoMeta({
     : "Abdurrahman's Personal website",
   ogImage: contentData.value?.cover
     ? `/images/blog/${contentData.value.cover}`
-    : '/images/my-icon.png',
+    : '/images/my-icon.webp',
   twitterCard: 'summary_large_image'
 })
 </script>
