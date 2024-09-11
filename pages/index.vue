@@ -3,7 +3,7 @@
     <div class="about-me">
       <NuxtImg
         class="my-icon"
-        src="/images/my-icon.webp"
+        src="/images/my-icon.png"
         alt="personal picture of the website owner pixilated"
         width="102"
         height="102"
@@ -184,7 +184,7 @@ useSeoMeta({
   ogTitle: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
   description: `${i18n.t('summery')}`,
   ogDescription: `${i18n.t('summery')}`,
-  ogImage: '/images/my-icon.webp',
+  ogImage: '/images/my-icon.png',
   twitterCard: 'summary_large_image'
 })
 </script>
