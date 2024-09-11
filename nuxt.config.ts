@@ -23,7 +23,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
     'nuxt-gtag',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/image'
   ],
 
   // //Gtag

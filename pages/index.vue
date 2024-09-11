@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="about-me">
-      <img
+      <NuxtImg
         class="my-icon"
         src="/images/my-icon.webp"
         alt="personal picture of the website owner pixilated"
