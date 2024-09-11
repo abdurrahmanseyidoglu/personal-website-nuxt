@@ -79,7 +79,6 @@
 </template>
 <script setup lang="ts">
 import type { JobPoint, Language } from '~/types/Interfaces'
-await preloadComponents('EmploymentCard')
 
 const i18n = useI18n()
 const ImtilakJobPoints: JobPoint[] = [
