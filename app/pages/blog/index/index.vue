@@ -2,8 +2,8 @@
   <div class="blog-page">
     <p class="title">{{ `(${posts?.length} Posts) ` }}</p>
     <ul class="posts-wrapper">
-      <li v-for="post in posts" :key="post._path">
-        <MdCustomLink :title="post.title" :href="post._path" class="post-title" />
+      <li v-for="post in posts" :key="post.path">
+        <MdCustomLink :title="post.title" :href="post.path" class="post-title" />
         <span class="date">{{ formatDate(post.date) }}</span>
       </li>
     </ul>
@@ -17,15 +17,15 @@ useHead({
   title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`
 })
 
-const { data: posts } = await useAsyncData('get-all-posts', () =>
-  queryContent(`${i18n.locale.value}`, 'blog').sort({ date: -1 }).find()
-)
+// Use the appropriate collection based on locale
+const collectionName = computed(() => i18n.locale.value === 'ar' ? 'blog_ar' : 'blog_en')
 
-// const { data: page } = await useAsyncData('index', () => queryContent(`${i18n.locale.value}`,'blog').findOne())
-// if (!page.value) {
-//   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-// }
-// console.log(page);
+const { data: posts } = await useAsyncData('get-all-posts', async () => {
+  const result = await queryCollection(collectionName.value)
+    .order('date', 'DESC')
+    .all()
+  return result
+}, { watch: [collectionName] })
 
 const formatDate = (dateString: string): string => {
   if (dateString) {

@@ -18,13 +18,13 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
-    'nuxt-icon',
     '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
     'nuxt-gtag',
     '@nuxtjs/color-mode',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxt/icon'
   ],
 
   // //Gtag
@@ -36,20 +36,20 @@ export default defineNuxtConfig({
   //Color mode:
   colorMode: {
     preference: 'system',
-    fallback: 'light', 
+    fallback: 'light',
     classPrefix: '',
     classSuffix: '',
     storageKey: 'nuxt-color-mode'
   },
   // Nuxt Content options
   content: {
-    documentDriven: {},
-    highlight: {
-      theme: 'github-dark'
-    },
-    contentHead: true
-    // defaultLocale: 'en',
-    // locales: ['en', 'ar']
+    build: {
+      markdown: {
+        highlight: {
+          theme: 'github-dark'
+        }
+      }
+    }
   },
 
   googleFonts: {
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
-        iso: 'en-US',
+        // iso: 'en-US',
         file: 'en-US.json',
         dir: 'ltr',
         //Custom Properties
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
       },
       {
         code: 'ar',
-        iso: 'ar-SY',
+        // iso: 'ar-SY',
         dir: 'rtl',
         file: 'ar-SY.json',
         //Custom Properties
@@ -81,8 +81,6 @@ export default defineNuxtConfig({
       }
     ],
     defaultLocale: 'en',
-    lazy: true,
-    langDir: 'locales'
   },
 
   compatibilityDate: '2024-09-08'

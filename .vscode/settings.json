@@ -4,7 +4,9 @@
         "Ilajak",
         "Imtilak",
         "Ince",
-        "Yenikapi"
+        "nuxtjs",
+        "Yenikapi",
+        "العربيّة"
     ],
     "i18n-ally.localesPaths": "locales",
     "i18n-ally.keystyle": "nested",
