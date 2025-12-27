@@ -59,6 +59,14 @@ export default defineNuxtConfig({
     strategy: 'prefix',
     locales: [
       {
+        code: 'ar',
+        // iso: 'ar-SY',
+        dir: 'rtl',
+        file: 'ar-SY.json',
+        // Custom Properties
+        langName: 'العربيّة',
+      },
+      {
         code: 'en',
         // iso: 'en-US',
         file: 'en-US.json',
@@ -67,12 +75,12 @@ export default defineNuxtConfig({
         langName: 'English',
       },
       {
-        code: 'ar',
-        // iso: 'ar-SY',
-        dir: 'rtl',
-        file: 'ar-SY.json',
+        code: 'tr',
+        // iso: 'tr-TR',
+        dir: 'ltr',
+        file: 'tr-TR.json',
         // Custom Properties
-        langName: 'العربيّة',
+        langName: 'Türkçe',
       },
     ],
     defaultLocale: 'en',

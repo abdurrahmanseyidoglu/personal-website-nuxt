@@ -7,13 +7,17 @@
       />
       <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
     </div>
-    <NuxtLink
-      v-for="locale in availableLocales"
-      :key="locale.code"
-      :to="switchLocalePath(locale.code)"
-    >
-      {{ locale.langName }}
-    </NuxtLink>
+    <div class="navbar-languages">
+      <NuxtLink
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)"
+        active-class="selected-language"
+      >
+        {{ locale.langName }}
+      </NuxtLink>
+    </div>
+
     <div class="theme-toggle">
       <Icon
         name="ic:round-nights-stay"
@@ -39,10 +43,10 @@
 
 <script lang="ts" setup>
 const colorMode = useColorMode()
-const { locale, locales } = useI18n()
+const { locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const availableLocales = computed(() => {
-  return locales.value.filter(i => i.code !== locale.value)
+  return locales.value
 })
 const handleThemeChange = (themeType: string) => {
   colorMode.preference = themeType
