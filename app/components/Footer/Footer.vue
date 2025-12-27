@@ -39,7 +39,7 @@ const footerLinks = [
   },
   {
     platformName: 'X',
-    link: 'https://x.com/llseyidoglu',
+    link: 'https://x.com/ll_alsayed',
     icon: 'x',
   },
 ]

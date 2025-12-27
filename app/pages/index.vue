@@ -22,7 +22,15 @@
         </p>
         <div class="employment-cards-wrapper">
           <EmploymentCard
-            :date="`${$t('november')} 2021 - ${$t('august')} 2024`"
+            :date="`${$t('january')} 2025 - ${$t('present')}`"
+            :job-tile="$t('frontEnd')"
+            :company-name="$t('arsipaGmbh')"
+            :company-location="`${$t('berlin')} / ${$t('germany')}`"
+            :job-points="ArsipaJobPoints"
+          />
+          <hr class="dashed-separator">
+          <EmploymentCard
+            :date="`${$t('november')} 2021 - ${$t('december')} 2024`"
             :job-tile="$t('frontEnd')"
             :company-name="$t('imtilakGroup')"
             :company-location="`${$t('istanbul')} / ${$t('turkey')}`"
@@ -30,7 +38,7 @@
           />
           <hr class="dashed-separator">
           <EmploymentCard
-            :date="`${$t('august')} 2020 - ${$t('october')} -2021`"
+            :date="`${$t('may')} 2020 - ${$t('september')} 2021`"
             :job-tile="$t('frontEnd')"
             :company-name="$t('inceGroup')"
             :company-location="`${$t('istanbul')} / ${$t('turkey')}`"
@@ -100,6 +108,26 @@
 import type { JobPoint, Language } from '@@/types/Interfaces'
 
 const i18n = useI18n()
+
+const ArsipaJobPoints: JobPoint[] = [
+  {
+    point_title: i18n.t('arsipaPoint1'),
+    point_links: [],
+  },
+  {
+    point_title: i18n.t('arsipaPoint2'),
+    point_links: [],
+  },
+  {
+    point_title: i18n.t('arsipaPoint3'),
+    point_links: [],
+  },
+  {
+    point_title: i18n.t('arsipaPoint4'),
+    point_links: [],
+  },
+]
+
 const ImtilakJobPoints: JobPoint[] = [
   {
     point_title: i18n.t('imtilakPoint1'),
@@ -111,10 +139,6 @@ const ImtilakJobPoints: JobPoint[] = [
   },
   {
     point_title: i18n.t('imtilakPoint3'),
-    point_links: [],
-  },
-  {
-    point_title: i18n.t('imtilakPoint4'),
     point_links: [
       {
         point_title: '[1]',
@@ -142,14 +166,6 @@ const ImtilakJobPoints: JobPoint[] = [
       },
     ],
   },
-  {
-    point_title: i18n.t('imtilakPoint5'),
-    point_links: [],
-  },
-  {
-    point_title: i18n.t('imtilakPoint6'),
-    point_links: [],
-  },
 ]
 
 const InceJobPoints: JobPoint[] = [
@@ -159,14 +175,6 @@ const InceJobPoints: JobPoint[] = [
   },
   {
     point_title: i18n.t('incePoint2'),
-    point_links: [],
-  },
-  {
-    point_title: i18n.t('incePoint3'),
-    point_links: [],
-  },
-  {
-    point_title: i18n.t('incePoint4'),
     point_links: [],
   },
 ]
@@ -187,8 +195,8 @@ const librariesAndFrameworks = ref<string[]>([
   'Inertia.js',
   'Laravel',
   'Blade template engine',
+  'GraphQl',
   'Tailwind CSS',
-  'Bootstrap',
 ])
 
 const languages = ref<Language[]>([
