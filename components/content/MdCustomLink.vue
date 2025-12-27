@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <style lang="scss">
-@import '../../assets/global_scss/variables';
+@use '../../assets/global_scss/global-styles.scss' as *;
 
 .custom-link {
   text-decoration: none;

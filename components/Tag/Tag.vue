@@ -11,5 +11,5 @@ const props = defineProps({
 </script>
 
 <style lang="scss">
-@import './Tag.scss';
+@use './Tag.scss';
 </style>

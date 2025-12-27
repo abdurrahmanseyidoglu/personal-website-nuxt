@@ -7,7 +7,7 @@
   </NuxtLink>
 </template>
 <style lang="scss">
-@import './CustomLink';
+@use './CustomLink';
 </style>
 <script setup lang="ts">
 const props = defineProps<{

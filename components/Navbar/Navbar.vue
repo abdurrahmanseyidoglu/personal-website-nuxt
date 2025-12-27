@@ -48,5 +48,5 @@ const handleThemeChange = (themeType: string) => {
 </script>
 
 <style lang="scss">
-@import './Navbar';
+@use './Navbar';
 </style>

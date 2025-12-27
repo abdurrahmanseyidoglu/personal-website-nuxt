@@ -1,4 +1,4 @@
-@import '../../assets/global_scss/variables';
+@use '../../assets/global_scss/global-styles.scss' as *;
 
 .employment-card {
   width: 100%;

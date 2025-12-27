@@ -1,4 +1,4 @@
-@import '../assets/global_scss/variables';
+@use '../assets/global_scss/variables' as *;
 
 .home {
   .about-me {
@@ -17,6 +17,7 @@
     }
 
     .my-skills {
+
       .skills,
       .sub-skills {
         list-style: inside;

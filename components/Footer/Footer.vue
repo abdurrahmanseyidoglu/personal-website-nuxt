@@ -39,5 +39,5 @@ const footerLinks = [
 ]
 </script>
 <style lang="scss">
-@import './Footer';
+@use './Footer';
 </style>

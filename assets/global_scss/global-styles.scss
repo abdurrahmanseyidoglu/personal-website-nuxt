@@ -1,16 +1,22 @@
-@import './reset';
-@import './breakpoints-mixin';
+@forward './reset';
+@forward './breakpoints-mixin';
+@forward './variables';
+
+@use './variables' as *;
 
 ul ul {
     margin-inline-start: 1rem;
 
 }
+
 ul li {
     list-style: initial;
 }
+
 ul ul li {
     list-style: circle inside;
 }
+
 .separator {
     margin-block: 1rem;
     width: 100%;

@@ -32,5 +32,5 @@ watch(locale, () => {
 </script>
 
 <style lang="scss">
-@import './assets/global_scss/global-styles';
+@use './assets/global_scss/global-styles';
 </style>

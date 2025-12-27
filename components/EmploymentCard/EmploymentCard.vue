@@ -38,5 +38,5 @@ const props = defineProps<{
 }>()
 </script>
 <style lang="scss">
-@import './EmploymentCard.scss';
+@use './EmploymentCard.scss';
 </style>
