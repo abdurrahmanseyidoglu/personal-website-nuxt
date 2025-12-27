@@ -16,6 +16,7 @@
     "@nuxt/image": "^2.0.0",
     "@nuxt/test-utils": "^3.21.0",
     "@nuxt/types": "^2.18.1",
+    "tslib": "^2.8.1",
     "@nuxt/ui": "^4.3.0",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "10.2.1",
