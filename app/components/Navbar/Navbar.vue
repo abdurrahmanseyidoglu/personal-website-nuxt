@@ -19,6 +19,10 @@
           {{ locale.langName }}
         </NuxtLink>
       </div>
+      <div class="flex items-center gap-3">
+        <span class="text-sm">Animated Cursor</span>
+        <USwitch v-model="animationEnabled" />
+      </div>
 
       <div class="flex items-center justify-end gap-4 cursor-pointer">
         <Icon
@@ -41,10 +45,12 @@
         />
       </div>
     </div>
+    <FluidCursor v-if="animationEnabled" />
   </div>
 </template>
 
 <script lang="ts" setup>
+const { animationEnabled } = useAnimations()
 const colorMode = useColorMode()
 const { locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
