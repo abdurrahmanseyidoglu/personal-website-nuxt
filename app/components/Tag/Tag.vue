@@ -6,7 +6,7 @@
 
 <script setup lang="ts">
 const props = defineProps({
-  title: String
+  title: String,
 })
 </script>
 

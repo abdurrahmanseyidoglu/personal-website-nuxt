@@ -6,9 +6,7 @@
     {{ props.title }}
   </NuxtLink>
 </template>
-<style lang="scss">
-@use './CustomLink';
-</style>
+
 <script setup lang="ts">
 const props = defineProps<{
   href: string
@@ -17,3 +15,7 @@ const props = defineProps<{
 const route = useRoute()
 const localePath = useLocalePath()
 </script>
+
+<style lang="scss">
+@use './CustomLink';
+</style>

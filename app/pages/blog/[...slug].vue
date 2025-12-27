@@ -1,10 +1,14 @@
 <template>
-  <ContentRenderer v-if="data" :value="data" class="prose mx-auto dark:prose-invert" />
-  <div class="tags-wrapper">
-    <!-- <template v-if="data?.tags?.length ?? [].length > 0">
+  <ContentRenderer
+    v-if="data"
+    :value="data"
+    class="prose mx-auto dark:prose-invert"
+  />
+  <!-- <div class="tags-wrapper"> -->
+  <!-- <template v-if="data?.tags?.length ?? [].length > 0">
       <Tag v-for="tag in data?.tags" :key="tag" :title="tag"/>
     </template> -->
-  </div>
+  <!-- </div> -->
 </template>
 
 <script setup lang="ts">
@@ -29,7 +33,7 @@ const { data } = await useAsyncData(`get-post-${route.path}`, async () => {
 useHead({
   title: data.value?.title
     ? `${data.value.title} | ${i18n.t('abdurrahman')}`
-    : `${i18n.t('abdurrahman')}`
+    : `${i18n.t('abdurrahman')}`,
 })
 useSeoMeta({
   ogTitle: data.value?.title
@@ -37,16 +41,17 @@ useSeoMeta({
     : `${i18n.t('abdurrahman')}`,
   description: data.value?.description
     ? data.value.description
-    : "Abdurrahman's Personal website",
+    : 'Abdurrahman\'s Personal website',
   ogDescription: data.value?.description
     ? data.value.description
-    : "Abdurrahman's Personal website",
+    : 'Abdurrahman\'s Personal website',
   ogImage: data.value?.cover
     ? `/images/blog/${data.value.cover}`
     : '/images/my-icon.png',
-  twitterCard: 'summary_large_image'
+  twitterCard: 'summary_large_image',
 })
 </script>
+
 <style lang="scss">
 // keep code direction left to right in Arabic
 pre {

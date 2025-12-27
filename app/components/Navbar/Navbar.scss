@@ -26,11 +26,13 @@
     align-items: center;
     justify-content: flex-end;
     gap: 1rem;
+
     &:hover {
       cursor: pointer;
     }
   }
 }
+
 .dark {
   .navbar {
     background-color: #27272a;

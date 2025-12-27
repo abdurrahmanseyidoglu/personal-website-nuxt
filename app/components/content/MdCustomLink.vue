@@ -1,5 +1,8 @@
 <template>
-  <a class="custom-link" :href="props.href">
+  <a
+    class="custom-link"
+    :href="props.href"
+  >
     {{ props.title }}
   </a>
 </template>
@@ -7,7 +10,7 @@
 <script setup lang="ts">
 const props = defineProps({
   href: String,
-  title: String
+  title: String,
 })
 </script>
 

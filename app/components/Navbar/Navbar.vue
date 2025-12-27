@@ -1,8 +1,14 @@
 <template>
   <div class="navbar">
     <div class="navbar-links-wrapper">
-      <CustomLink :href="`/`" :title="$t('home')" />
-      <CustomLink :href="`/blog`" :title="$t('blog')" />
+      <CustomLink
+        :href="`/`"
+        :title="$t('home')"
+      />
+      <CustomLink
+        :href="`/blog`"
+        :title="$t('blog')"
+      />
       <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
     </div>
     <NuxtLink
@@ -40,7 +46,7 @@ const colorMode = useColorMode()
 const { locale, locales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const availableLocales = computed(() => {
-  return locales.value.filter((i) => i.code !== locale.value)
+  return locales.value.filter(i => i.code !== locale.value)
 })
 const handleThemeChange = (themeType: string) => {
   colorMode.preference = themeType

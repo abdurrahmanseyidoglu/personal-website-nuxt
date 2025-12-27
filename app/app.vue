@@ -11,7 +11,7 @@ useHead({
   htmlAttrs: {
     lang: locale.value,
     dir: locale.value === 'ar' ? 'rtl' : 'ltr',
-  }
+  },
 })
 
 // Watch for language changes
@@ -19,8 +19,8 @@ watch(locale, () => {
   useHead({
     htmlAttrs: {
       lang: locale.value,
-      dir: locale.value === 'ar' ? 'rtl' : 'ltr'
-    }
+      dir: locale.value === 'ar' ? 'rtl' : 'ltr',
+    },
   })
 })
 </script>

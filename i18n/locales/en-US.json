@@ -36,5 +36,11 @@
     "turkish": "Turkish",
     "native": "Native",
     "advanced": "advanced",
-    "copyRight": "All Rights Reserved Abdurrahman Seyidoğlu ©"
+    "copyRight": "All Rights Reserved Abdurrahman Seyidoğlu ©",
+    "error": {
+        "pageNotFound": "Page not found",
+        "serverError": "Internal server error",
+        "somethingWrong": "Something went wrong",
+        "goHome": "Go back home"
+    }
 }

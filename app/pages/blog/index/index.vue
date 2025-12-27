@@ -1,9 +1,18 @@
 <template>
   <div class="blog-page">
-    <p class="title">{{ `(${posts?.length} Posts) ` }}</p>
+    <p class="title">
+      {{ `(${posts?.length} Posts) ` }}
+    </p>
     <ul class="posts-wrapper">
-      <li v-for="post in posts" :key="post.path">
-        <MdCustomLink :title="post.title" :href="post.path" class="post-title" />
+      <li
+        v-for="post in posts"
+        :key="post.path"
+      >
+        <MdCustomLink
+          :title="post.title"
+          :href="post.path"
+          class="post-title"
+        />
         <span class="date">{{ formatDate(post.date) }}</span>
       </li>
     </ul>
@@ -14,7 +23,7 @@
 const i18n = useI18n()
 
 useHead({
-  title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`
+  title: `${i18n.t('blog')} | ${i18n.t('abdurrahman')}`,
 })
 
 // Use the appropriate collection based on locale
@@ -34,7 +43,8 @@ const formatDate = (dateString: string): string => {
     const month = String(date.getMonth() + 1).padStart(2, '0')
     const day = String(date.getDate()).padStart(2, '0')
     return `${year}-${month}-${day}`
-  } else {
+  }
+  else {
     return ''
   }
 }

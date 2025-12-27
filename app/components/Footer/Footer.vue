@@ -1,8 +1,13 @@
 <template>
   <footer class="footer">
-    <p class="copy-right">{{ $t('copyRight') }} {{ new Date().getFullYear() }}</p>
+    <p class="copy-right">
+      {{ $t('copyRight') }} {{ new Date().getFullYear() }}
+    </p>
     <div class="footer-links">
-      <template v-for="link in footerLinks" :key="link.link">
+      <template
+        v-for="link in footerLinks"
+        :key="link.link"
+      >
         <a
           :href="link.link"
           target="_blank"
@@ -19,25 +24,27 @@
     </div>
   </footer>
 </template>
+
 <script setup lang="ts">
 const footerLinks = [
   {
     platformName: 'GitHub',
     link: 'https://github.com/abdurrahmanseyidoglu',
-    icon: 'github'
+    icon: 'github',
   },
   {
     platformName: 'LinkedIn',
     link: 'https://www.linkedin.com/in/abdurrahmanseyidoglu/',
-    icon: 'linkedin'
+    icon: 'linkedin',
   },
   {
     platformName: 'X',
     link: 'https://x.com/llseyidoglu',
-    icon: 'x'
-  }
+    icon: 'x',
+  },
 ]
 </script>
+
 <style lang="scss">
 @use './Footer';
 </style>

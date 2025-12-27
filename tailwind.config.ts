@@ -3,19 +3,19 @@ export default {
   darkMode: 'class',
   content: [],
   theme: {
-    
+
     extend: {
       typography: {
         DEFAULT: {
           css: {
             'code::before': {
-              content: '""'
+              content: '""',
             },
             'code::after': {
-              content: '""'
-            }
-          }
-        }
+              content: '""',
+            },
+          },
+        },
       },
     },
   },
