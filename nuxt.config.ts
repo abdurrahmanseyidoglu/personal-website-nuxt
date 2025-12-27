@@ -52,6 +52,12 @@ export default defineNuxtConfig({
       'Roboto Mono': [400, 500, 600, 700],
       'Rubik': [400, 500, 600, 700],
     },
+    display: 'swap',
+    preload: true,
+    download: true,
+    base64: false,
+    fontsDir: 'fonts',
+    stylePath: 'fonts/fonts.css',
   },
 
   i18n: {
