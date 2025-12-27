@@ -1,9 +1,9 @@
 <template>
-  <footer class="footer">
-    <p class="copy-right">
+  <footer class="w-full pt-12 pb-8">
+    <p class="text-center mb-4">
       {{ $t('copyRight') }} {{ new Date().getFullYear() }}
     </p>
-    <div class="footer-links">
+    <div class="flex items-center justify-center gap-4">
       <template
         v-for="link in footerLinks"
         :key="link.link"
@@ -44,7 +44,3 @@ const footerLinks = [
   },
 ]
 </script>
-
-<style lang="scss">
-@use './Footer';
-</style>

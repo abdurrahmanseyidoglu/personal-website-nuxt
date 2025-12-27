@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   // Page transition
@@ -10,7 +12,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
-    '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxtjs/sitemap',
     'nuxt-gtag',
@@ -21,10 +22,12 @@ export default defineNuxtConfig({
 
   // Devtools
   devtools: { enabled: true },
+  css: ['./app/assets/css/main.css'],
   site: {
     url: 'https://abdurrahmanseyidoglu.com/',
     name: 'Abdurrahman Seyidoglu',
   },
+
   // //Gtag
   // gtag: {
   //   enabled: process.env.NODE_ENV === 'production',
@@ -41,6 +44,11 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-09-08',
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
   eslint: {
     config: {
       stylistic: true,

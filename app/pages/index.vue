@@ -1,26 +1,26 @@
 <template>
-  <div class="home">
-    <div class="about-me">
+  <div>
+    <div>
       <NuxtImg
-        class="my-icon"
+        class="w-[102px]"
         src="/images/my-icon.png"
         alt="personal picture of the website owner pixilated"
         width="102"
         height="102"
       />
-      <p class="name">
+      <p class="text-5xl font-semibold mt-4">
         {{ $t('hi') }}
       </p>
-      <p class="description">
+      <p class="my-4">
         {{ $t('summery') }}
       </p>
-      <hr class="separator">
+      <hr class="my-4 w-full h-px border-t border-solid">
       <!-- PROFESSIONAL EXPERIENCE -->
-      <div class="employment-history">
-        <p class="employment-title">
+      <div>
+        <p class="text-2xl font-medium mb-4 mt-8">
           {{ $t('experience') }}
         </p>
-        <div class="employment-cards-wrapper">
+        <div class="flex items-center justify-center flex-col">
           <EmploymentCard
             :date="`${$t('january')} 2025 - ${$t('present')}`"
             :job-tile="$t('frontEnd')"
@@ -28,7 +28,7 @@
             :company-location="`${$t('berlin')} / ${$t('germany')}`"
             :job-points="ArsipaJobPoints"
           />
-          <hr class="dashed-separator">
+          <hr class="my-4 w-[60%] h-px border-t border-dashed ms-0">
           <EmploymentCard
             :date="`${$t('november')} 2021 - ${$t('december')} 2024`"
             :job-tile="$t('frontEnd')"
@@ -36,7 +36,7 @@
             :company-location="`${$t('istanbul')} / ${$t('turkey')}`"
             :job-points="ImtilakJobPoints"
           />
-          <hr class="dashed-separator">
+          <hr class="my-4 w-[60%] h-px border-t border-dashed ms-0">
           <EmploymentCard
             :date="`${$t('may')} 2020 - ${$t('september')} 2021`"
             :job-tile="$t('frontEnd')"
@@ -47,36 +47,34 @@
         </div>
       </div>
 
-      <hr class="separator">
+      <hr class="my-4 w-full h-px border-t border-solid">
       <!-- Skills Section -->
-      <div class="my-skills">
-        <p class="title">
+      <div>
+        <p class="mb-4 font-medium text-2xl mt-8">
           {{ $t('skills') }}
         </p>
-        <ul class="skills">
+        <ul class="list-inside">
           <li>
-            <p class="sub-skill-title">
+            <p class="mt-4 mb-4 font-medium text-xl p-2 bg-[#6890bf9e] w-fit rounded-lg">
               {{ $t('programmingLanguages') }}
             </p>
-            <ul class="sub-skills">
+            <ul class="list-inside ms-4">
               <li
                 v-for="programmingLanguage in programmingLanguages"
                 :key="programmingLanguage"
-                class="sub-skill"
               >
                 {{ programmingLanguage }}
               </li>
             </ul>
           </li>
           <li>
-            <p class="sub-skill-title">
+            <p class="mt-4 mb-4 font-medium text-xl p-2 bg-[#6890bf9e] w-fit rounded-lg">
               {{ $t('frameworks') }}
             </p>
-            <ul class="sub-skills">
+            <ul class="list-inside ms-4">
               <li
                 v-for="framework in librariesAndFrameworks"
                 :key="framework"
-                class="sub-skill"
               >
                 {{ framework }}
               </li>
@@ -84,15 +82,13 @@
           </li>
 
           <li>
-            <ul class="sub-skills">
-              <p class="sub-skill-title">
-                {{ $t('languages') }}
-              </p>
-
+            <p class="mt-4 mb-4 font-medium text-xl p-2 bg-[#6890bf9e] w-fit rounded-lg">
+              {{ $t('languages') }}
+            </p>
+            <ul class="list-inside ms-4">
               <li
                 v-for="language in languages"
                 :key="language.name"
-                class="sub-skill"
               >
                 {{ language.name }} - ({{ language.proficiency }})
               </li>
@@ -215,7 +211,3 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 </script>
-
-<style lang="scss">
-@use './index';
-</style>

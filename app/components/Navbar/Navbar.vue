@@ -1,42 +1,45 @@
 <template>
-  <div class="navbar">
-    <div class="navbar-links-wrapper">
-      <CustomLink
-        :href="`/`"
-        :title="$t('home')"
-      />
+  <div class="flex items-center justify-between py-4 sticky top-0 bg-white dark:bg-zinc-800 z-10 shadow-[0_1px_0_rgba(17,17,26,0.1)] w-full">
+    <div class="max-w-5xl w-full flex items-center justify-between mx-auto px-4">
+      <div class="flex items-center justify-start gap-4">
+        <CustomLink
+          :href="`/`"
+          :title="$t('home')"
+        />
       <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
-    </div>
-    <div class="navbar-languages">
-      <NuxtLink
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"
-        active-class="selected-language"
-      >
-        {{ locale.langName }}
-      </NuxtLink>
-    </div>
+      </div>
+      <div class="flex items-center justify-end gap-4 cursor-pointer">
+        <NuxtLink
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale.code)"
+          class="relative"
+          active-class="language-active"
+        >
+          {{ locale.langName }}
+        </NuxtLink>
+      </div>
 
-    <div class="theme-toggle">
-      <Icon
-        name="ic:round-nights-stay"
-        size="1.5rem"
-        class="text-neutral-800 dark:text-slate-200"
-        @click="handleThemeChange('dark')"
-      />
-      <Icon
-        name="material-symbols:light-mode-outline-rounded"
-        size="1.5rem"
-        color="text-neutral-800 dark:text-slate-200"
-        @click="handleThemeChange('light')"
-      />
-      <Icon
-        name="material-symbols:monitor-outline"
-        size="1.5rem"
-        color="text-neutral-800 dark:text-slate-200"
-        @click="handleThemeChange('system')"
-      />
+      <div class="flex items-center justify-end gap-4 cursor-pointer">
+        <Icon
+          name="ic:round-nights-stay"
+          size="1.5rem"
+          class="text-neutral-800 dark:text-slate-200"
+          @click="handleThemeChange('dark')"
+        />
+        <Icon
+          name="material-symbols:light-mode-outline-rounded"
+          size="1.5rem"
+          class="text-neutral-800 dark:text-slate-200"
+          @click="handleThemeChange('light')"
+        />
+        <Icon
+          name="material-symbols:monitor-outline"
+          size="1.5rem"
+          class="text-neutral-800 dark:text-slate-200"
+          @click="handleThemeChange('system')"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -53,6 +56,16 @@ const handleThemeChange = (themeType: string) => {
 }
 </script>
 
-<style lang="scss">
-@use './Navbar';
+<style scoped>
+.language-active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #339af0;
+  bottom: -3px;
+  z-index: 1;
+  inset-inline-start: 0;
+}
 </style>

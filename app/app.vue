@@ -24,7 +24,3 @@ watch(locale, () => {
   })
 })
 </script>
-
-<style lang="scss">
-@use './assets/global_scss/global-styles';
-</style>
