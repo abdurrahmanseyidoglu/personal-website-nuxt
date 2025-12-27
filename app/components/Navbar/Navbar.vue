@@ -5,10 +5,6 @@
         :href="`/`"
         :title="$t('home')"
       />
-      <CustomLink
-        :href="`/blog`"
-        :title="$t('blog')"
-      />
       <!-- <CustomLink :href="`/portfolio`" :title="$t('portfolio')" /> -->
     </div>
     <NuxtLink

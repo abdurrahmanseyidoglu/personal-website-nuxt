@@ -3,23 +3,7 @@ export default {
   darkMode: 'class',
   content: [],
   theme: {
-
-    extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            'code::before': {
-              content: '""',
-            },
-            'code::after': {
-              content: '""',
-            },
-          },
-        },
-      },
-    },
+    extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 }

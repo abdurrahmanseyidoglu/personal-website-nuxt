@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   // Sitemap
 
   modules: [
-    '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
@@ -39,16 +38,6 @@ export default defineNuxtConfig({
     classPrefix: '',
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
-  },
-  // Nuxt Content options
-  content: {
-    build: {
-      markdown: {
-        highlight: {
-          theme: 'github-dark',
-        },
-      },
-    },
   },
 
   compatibilityDate: '2024-09-08',
