@@ -6,7 +6,7 @@
         class="w-full"
       >
         <NuxtImg
-          class="w-[25.5]"
+          class="w-25.5"
           src="/images/my-icon.png"
           alt="personal picture of the website owner pixilated"
           width="102"
@@ -16,7 +16,7 @@
     </ClientOnly>
     <NuxtImg
       v-else
-      class="w-[25.5]"
+      class="w-25.5"
       src="/images/my-icon.png"
       alt="personal picture of the website owner pixilated"
       width="102"
