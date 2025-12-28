@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full pt-12 pb-8">
+  <footer class="px-3 md:px-0 w-full pb-4 pt-6 md:pt-12 md:pb-8">
     <p class="text-center mb-4">
       {{ $t('copyRight') }} {{ new Date().getFullYear() }}
     </p>

@@ -99,5 +99,8 @@ export default defineNuxtConfig({
       },
     ],
     defaultLocale: 'en',
+    experimental: {
+      typedOptionsAndMessages: 'all',
+    },
   },
 })

@@ -9,7 +9,7 @@
         "Yenikapi",
         "العربيّة"
     ],
-    "i18n-ally.localesPaths": "locales",
+    "i18n-ally.localesPaths": "i18n/locales",
     "i18n-ally.keystyle": "nested",
     "i18n-ally.sourceLanguage": "en-US",
     "i18n-ally.displayLanguage": "en-US",

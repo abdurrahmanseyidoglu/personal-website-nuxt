@@ -48,5 +48,8 @@
         "serverError": "خطأ في الخادم",
         "somethingWrong": "حدث خطأ ما",
         "goHome": "العودة للصفحة الرئيسية"
-    }
+    },
+    "enableAnimations": "تفعيل الانميشن",
+    "theme": "السمة"
+
 }

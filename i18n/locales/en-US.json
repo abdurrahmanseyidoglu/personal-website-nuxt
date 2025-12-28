@@ -48,5 +48,7 @@
         "serverError": "Internal server error",
         "somethingWrong": "Something went wrong",
         "goHome": "Go back home"
-    }
+    },
+    "enableAnimations": "Enable Animations",
+    "theme": "Theme"
 }

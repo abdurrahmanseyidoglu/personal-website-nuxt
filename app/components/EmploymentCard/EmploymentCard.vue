@@ -1,24 +1,26 @@
 <template>
   <div class="w-full">
-    <div class="flex items-center justify-between mb-4 p-2 rounded-lg bg-[#6890bf9e]">
-      <p class="text-sm">
+    <div class="flex-col items-start flex md:flex-row md:items-center md:justify-between mb-4 p-2 rounded-lg bg-[#6890bf9e]">
+      <p class="text-sm order-2 md:order-1">
         {{ props.date }}
       </p>
-      <p class="text-xl font-medium">
+      <p class="text-lg md:text-xl font-medium order-1 md:order-1">
         {{ props.jobTile }}, {{ props.companyName }}
       </p>
-      <p class="text-sm">
+      <p class="text-sm order-3 md:order-1">
         {{ props.companyLocation }}
       </p>
     </div>
     <p>
       {{ props.jobDescription }}
     </p>
-    <ul class="list-inside list-square">
+    <ul
+      class="list-inside list-square"
+    >
       <li
         v-for="jobPoint in props.jobPoints"
         :key="jobPoint?.point_title"
-        class="mb-2"
+        class="mb-2 list-disc"
       >
         {{ jobPoint.point_title }}
         <template v-if="jobPoint.point_links.length > 0">
@@ -26,7 +28,7 @@
             v-for="pointLink in jobPoint.point_links"
             :key="pointLink.point_href"
             target="_blank"
-            class="external-link"
+            class="external-link me-1"
             :title="pointLink.point_title"
             :href="pointLink.point_href"
           >{{ pointLink.point_title }}</a>

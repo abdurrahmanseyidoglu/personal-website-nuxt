@@ -48,5 +48,7 @@
         "serverError": "Dahili sunucu hatası",
         "somethingWrong": "Bir şeyler yanlış gitti",
         "goHome": "Ana sayfaya dön"
-    }
+    },
+    "enableAnimations": "Animasyonları Etkinleştir",
+    "theme": "Tema"
 }
