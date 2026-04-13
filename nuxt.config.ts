@@ -45,6 +45,9 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-09-08',
+  nitro: {
+    preset: 'netlify',
+  },
   vite: {
     plugins: [
       tailwindcss(),
