@@ -48,7 +48,7 @@
         class="w-full"
       >
         <p class="my-4">
-          {{ $t('summery') }}
+          {{ $t('summary') }}
         </p>
       </LazyBlurReveal>
     </ClientOnly>
@@ -56,7 +56,7 @@
       v-else
       class="my-4"
     >
-      {{ $t('summery') }}
+      {{ $t('summary') }}
     </p>
 
     <hr class="my-4 w-full h-px border-t border-solid">
@@ -399,8 +399,8 @@ useHead({
 })
 useSeoMeta({
   ogTitle: `${i18n.t('home')} | ${i18n.t('abdurrahman')}`,
-  description: `${i18n.t('summery')}`,
-  ogDescription: `${i18n.t('summery')}`,
+  description: `${i18n.t('summary')}`,
+  ogDescription: `${i18n.t('summary')}`,
   ogImage: '/images/my-icon.png',
   twitterCard: 'summary_large_image',
 })
