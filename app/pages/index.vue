@@ -377,15 +377,20 @@ const programmingLanguages = ref<string[]>([
   'SQL',
 ])
 const librariesAndFrameworks = ref<string[]>([
+  'React',
+  'Next',
+  'Zod',
+  'Zustand',
+  'React Hook Form',
+  'MUI',
+  'Shadcn',
   'Vue',
   'Nuxt',
   'Pinia',
   'Vuex',
-  'React',
   'Inertia.js',
-  'Laravel',
   'Blade template engine',
-  'GraphQl',
+  'Apollo GraphQL',
   'Tailwind CSS',
 ])
 
