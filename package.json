@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@iconify-json/grommet-icons": "^1.2.4",
+    "@iconify-json/ic": "^1.2.4",
     "@iconify-json/material-symbols": "^1.2.71",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/icon": "^2.2.2",
