@@ -5,29 +5,36 @@
         :duration="0.5"
         class="w-full"
       >
-        <NuxtImg
-          class="w-25.5"
-          src="/images/my-icon.png"
-          alt="personal picture of the website owner pixilated"
-          width="102"
-          height="102"
-          format="webp"
-          quality="85"
-          sizes="102px"
-          :modifiers="{ fit: 'cover' }"
-          fetchpriority="high"
-          preload
-        />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="/images/my-icon.webp"
+          >
+          <img
+            src="/images/my-icon_50.webp"
+            alt="personal picture of the website owner pixilated"
+            width="102"
+            height="102"
+            fetchpriority="high"
+            class="w-25.5"
+          >
+        </picture>
       </LazyBlurReveal>
     </ClientOnly>
-    <NuxtImg
-      v-else
-      class="w-25.5"
-      src="/images/my-icon.png"
-      alt="personal picture of the website owner pixilated"
-      width="102"
-      height="102"
-    />
+    <picture v-else>
+      <source
+        media="(min-width: 1024px)"
+        srcset="/images/my-icon.webp"
+      >
+      <img
+        src="/images/my-icon_50.webp"
+        alt="personal picture of the website owner pixilated"
+        width="102"
+        height="102"
+        fetchpriority="high"
+        class="w-25.5"
+      >
+    </picture>
 
     <!-- Greeting -->
     <ClientOnly v-if="animationEnabled">
