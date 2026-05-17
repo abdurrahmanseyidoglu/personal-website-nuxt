@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   // },
 
   // Sitemap
-
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
@@ -20,7 +19,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/ui',
   ],
-
+  ssr: true,
   // Devtools
   devtools: { enabled: true },
   css: ['./app/assets/css/main.css'],
