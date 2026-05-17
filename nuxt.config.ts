@@ -54,6 +54,12 @@ export default defineNuxtConfig({
     build: {
       cssCodeSplit: true,
     },
+    optimizeDeps: {
+      include: [
+        '@vue/devtools-core',
+        '@vue/devtools-kit',
+      ],
+    },
   },
   eslint: {
     config: {
