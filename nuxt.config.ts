@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxt/ui',
+    '@nuxtjs/robots',
   ],
   ssr: true,
   // Devtools
@@ -107,6 +108,7 @@ export default defineNuxtConfig({
       typedOptionsAndMessages: 'all',
     },
   },
+
   sitemap: {
     zeroRuntime: true,
   },

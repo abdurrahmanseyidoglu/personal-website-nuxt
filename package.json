@@ -19,6 +19,7 @@
     "@nuxt/ui": "^4.7.1",
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/i18n": "10.3.0",
+    "@nuxtjs/robots": "6.0.8",
     "@nuxtjs/sitemap": "^8.0.15",
     "@tailwindcss/vite": "^4.3.0",
     "@vue/test-utils": "^2.4.10",
