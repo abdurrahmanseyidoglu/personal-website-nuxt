@@ -42,10 +42,9 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
   },
-
   compatibilityDate: '2024-09-08',
   nitro: {
-    preset: 'netlify',
+    preset: 'static',
   },
   vite: {
     plugins: [
