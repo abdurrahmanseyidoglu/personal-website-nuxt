@@ -18,7 +18,9 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     '@nuxt/ui',
     '@nuxtjs/robots',
+    '@nuxtjs/critters',
   ],
+
   ssr: true,
   // Devtools
   devtools: { enabled: true },
@@ -69,8 +71,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Roboto Mono': [400, 500, 600, 700],
-      'Rubik': [400, 500, 600, 700],
+      'Noto Sans Arabic': [400, 500, 600, 700],
     },
     display: 'swap',
     preload: true,
