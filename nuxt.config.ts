@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   //     pageTransition: { name: 'page', mode: 'out-in' }
   // },
 
-  // Sitemap
   modules: [
     '@nuxtjs/google-fonts',
     '@nuxtjs/i18n',
@@ -103,5 +102,8 @@ export default defineNuxtConfig({
     experimental: {
       typedOptionsAndMessages: 'all',
     },
+  },
+  sitemap: {
+    zeroRuntime: true,
   },
 })
