@@ -11,6 +11,12 @@
           alt="personal picture of the website owner pixilated"
           width="102"
           height="102"
+          format="webp"
+          quality="85"
+          sizes="102px"
+          :modifiers="{ fit: 'cover' }"
+          fetchpriority="high"
+          preload
         />
       </LazyBlurReveal>
     </ClientOnly>
