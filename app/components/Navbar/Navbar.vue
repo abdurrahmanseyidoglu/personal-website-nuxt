@@ -24,7 +24,7 @@
 
       <div class="hidden lg:flex items-center gap-3">
         <span class="text-sm font-semibold text-neutral-600 dark:text-neutral-300">{{ t('enableAnimations') }}</span>
-        <USwitch v-model="animationEnabled" />
+        <Switch v-model="animationEnabled" />
       </div>
 
       <div class="hidden lg:flex items-center justify-end gap-4 cursor-pointer">
@@ -151,6 +151,8 @@
 </template>
 
 <script lang="ts" setup>
+import Switch from '../Switch.vue'
+
 const { animationEnabled } = useAnimations()
 const colorMode = useColorMode()
 const { locales } = useI18n()
