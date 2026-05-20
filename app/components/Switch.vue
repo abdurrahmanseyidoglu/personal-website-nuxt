@@ -17,6 +17,7 @@ function toggle() {
 
 <template>
   <button
+    name="button"
     type="button"
     role="switch"
     :aria-checked="modelValue"

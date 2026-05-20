@@ -104,7 +104,7 @@
         <!-- Animation Toggle -->
         <div class="flex items-center justify-between gap-3 py-4 border-t border-neutral-200 dark:border-zinc-600">
           <span class="text-sm font-semibold text-neutral-600 dark:text-neutral-300">{{ t('enableAnimations') }}</span>
-          <USwitch v-model="animationEnabled" />
+          <Switch v-model="animationEnabled" />
         </div>
 
         <!-- Theme Switcher -->
