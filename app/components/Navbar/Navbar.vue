@@ -151,7 +151,7 @@
 </template>
 
 <script lang="ts" setup>
-import Switch from '../Switch.vue'
+import Switch from '../SwitchComponent.vue'
 
 const { animationEnabled } = useAnimations()
 const colorMode = useColorMode()
