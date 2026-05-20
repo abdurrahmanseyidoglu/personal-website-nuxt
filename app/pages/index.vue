@@ -16,7 +16,7 @@
             width="102"
             height="102"
             fetchpriority="high"
-            class="w-25.5"
+            class="block size-25.5 shrink-0 object-cover"
           >
         </picture>
       </LazyBlurReveal>
@@ -32,7 +32,7 @@
         width="102"
         height="102"
         fetchpriority="high"
-        class="w-25.5"
+        class="block size-25.5 shrink-0 object-cover"
       >
     </picture>
 

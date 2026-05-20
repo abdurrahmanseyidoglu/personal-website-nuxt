@@ -73,7 +73,8 @@ export default defineNuxtConfig({
     families: {
       'Noto Sans Arabic': [400, 500, 600, 700],
     },
-    display: 'swap',
+    subsets: ['arabic', 'latin'],
+    display: 'optional',
     preload: true,
     download: true,
     base64: false,
