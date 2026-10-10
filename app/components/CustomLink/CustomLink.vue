@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    :class="['custom-link no-underline relative text-base font-semibold text-inherit w-fit', { 'active': route.fullPath === props.href }]"
+    :class="['custom-link no-underline relative text-base font-semibold text-inherit w-fit', { active: route.fullPath === props.href }]"
     :to="localePath(`${props.href}`)"
   >
     {{ props.title }}

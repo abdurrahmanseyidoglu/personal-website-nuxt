@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   ssr: true,
   // Devtools
   devtools: { enabled: true },
-  css: ['./app/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   site: {
     url: 'https://abdurrahmanseyidoglu.com/',
     name: 'Abdurrahman Seyidoglu',
@@ -58,8 +58,8 @@ export default defineNuxtConfig({
     },
     optimizeDeps: {
       include: [
-        '@vue/devtools-core',
-        '@vue/devtools-kit',
+        'nuxt > @nuxt/devtools > @vue/devtools-core',
+        'nuxt > @nuxt/devtools > @vue/devtools-kit',
       ],
     },
   },

@@ -1,6 +1,0 @@
-# START nuxt-robots (indexable)
-User-agent: *
-Disallow: 
-
-Sitemap: https://abdurrahmanseyidoglu.com/sitemap_index.xml
-# END nuxt-robots
