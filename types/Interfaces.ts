@@ -16,3 +16,21 @@ export interface Language {
   name: string
   proficiency: string
 }
+export interface JobDate {
+  monthKey: string
+  year: number
+}
+export interface JobConfig {
+  titleKey: string
+  companyKey: string
+  cityKey: string
+  countryKey: string
+  start: JobDate
+  // Omit for a current job ("Present")
+  end?: JobDate
+  points: { key: string, links?: PointLink[] }[]
+}
+export interface LanguageConfig {
+  nameKey: string
+  proficiencyKey: string
+}
