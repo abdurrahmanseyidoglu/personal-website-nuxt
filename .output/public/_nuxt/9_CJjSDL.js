@@ -1,0 +1,1 @@
+import{d as e}from"#entry";var t=()=>{let t=e(`animationEnabled`,()=>!1);return{animationEnabled:t,toggleAnimations:()=>{t.value=!t.value},setAnimations:e=>{t.value=e}}};export{t};
